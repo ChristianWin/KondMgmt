@@ -2,7 +2,7 @@
 <model modelUID="r:3013b061-8947-4149-9f1e-447a42a0b746(at.hafina.wws.Wareneingang)">
   <persistence version="7" />
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <language namespace="ec097fca-5b84-41f2-847d-6a5690cae277(objectflow)" />
+  <language namespace="ec097fca-5b84-41f2-847d-6a5690cae277(org.modellwerkstatt.objectflow)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language namespace="5aaa957f-3447-4783-b1f7-b301fa3e0394(org.modellwerkstatt.manmap)" />
@@ -21,7 +21,7 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(objectflow.structure)" version="105" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="108" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="37" implicit="yes" />
   <roots>
@@ -342,7 +342,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="2578114784133153221">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133153191" resolveInfo="BelegTyp" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153225">
@@ -396,7 +396,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344322">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344317" resolveInfo="WareneingangsBeleg.Empfaenger" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344317" resolveInfo="Empfaenger" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344323">
@@ -424,7 +424,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344340">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344336" resolveInfo="WareneingangsBeleg.LieferantTyp" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344336" resolveInfo="LieferantTyp" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153251">
@@ -492,7 +492,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344263">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153269">
@@ -518,7 +518,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344383">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344380" resolveInfo="WareneingangsBeleg.Waehrung" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344380" resolveInfo="Waehrung" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344384">
@@ -628,7 +628,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344445">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344433" resolveInfo="WareneingangsBeleg.SubBelegTyp" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344433" resolveInfo="SubBelegTyp" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153295">
@@ -1902,7 +1902,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729345377">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729345373" resolveInfo="WareneingangsBelegPos.ArtikelArt" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729345373" resolveInfo="ArtikelArt" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153365">
@@ -2025,7 +2025,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344627">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344620" resolveInfo="WareneingangsBelegPos.MitPosition" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344620" resolveInfo="MitPosition" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344628">
@@ -2139,7 +2139,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344647">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344380" resolveInfo="WareneingangsBeleg.Waehrung" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344380" resolveInfo="Waehrung" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2324983695296015980">
@@ -2269,7 +2269,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344717">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344711" resolveInfo="WareneingangsBelegPos.Steuercode" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344711" resolveInfo="Steuercode" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344718">
@@ -4611,7 +4611,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="8104064611855118092">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133153191" resolveInfo="BelegTyp" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729912063">
@@ -4625,7 +4625,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729912069">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="8104064611855122134">
@@ -4718,7 +4718,7 @@
               </node>
             </node>
             <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="9189473878729912087">
-              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
               <link role="element" roleId="un0u.1707329006119989962" targetNodeId="9189473878729344262" resolveInfo="Fertig" />
             </node>
           </node>
@@ -6044,7 +6044,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="9189473878729366849">
         <property name="name" nameId="tpck.1169194664001" value="codStatus" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729366851">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
         </node>
       </node>
     </node>
@@ -6556,13 +6556,13 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="9189473878729366957">
         <property name="name" nameId="tpck.1169194664001" value="codStatus" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729366958">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8104064611855118166">
         <property name="name" nameId="tpck.1169194664001" value="codTyp" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="8104064611855121747">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133153191" resolveInfo="BelegTyp" />
         </node>
       </node>
     </node>
@@ -6904,7 +6904,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="9189473878729911553">
         <property name="name" nameId="tpck.1169194664001" value="codStatus" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729911554">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
         </node>
       </node>
     </node>
