@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="KondMgmt" uuid="0154f11d-a7f0-4ecd-b507-776dfe8dc0de" compileInMPS="true">
+<solution name="at.hafina.KondMgmt" uuid="0154f11d-a7f0-4ecd-b507-776dfe8dc0de" compileInMPS="true">
   <models>
     <modelRoot path="${solution_descriptor}/" />
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">0154f11d-a7f0-4ecd-b507-776dfe8dc0de(KondMgmt)</dependency>
+    <dependency reexport="false">0154f11d-a7f0-4ecd-b507-776dfe8dc0de(at.hafina.KondMgmt)</dependency>
     <dependency reexport="false">fba399db-f591-45dc-a279-e2a2a986e262(jetbrains.mps.build.generictasks)</dependency>
     <dependency reexport="false">1e645434-f066-4246-95c3-c768bd8f6bee(org.modellwerkstatt.FopLand)</dependency>
     <dependency reexport="false">77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)</dependency>
