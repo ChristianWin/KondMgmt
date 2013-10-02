@@ -1830,7 +1830,7 @@
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="7749746279199041446">
           <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
           <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7749746279199041448">
-            <property name="value" nameId="tpee.1070475926801" value="Lieferspesen [Eur/T]" />
+            <property name="value" nameId="tpee.1070475926801" value="Logistikkosten [Eur/T]" />
           </node>
         </node>
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="7749746279199041449">
@@ -3122,7 +3122,7 @@
         <property name="value" nameId="tpee.1070475926801" value="1*" />
       </node>
       <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4188926249117657855">
-        <property name="value" nameId="tpee.1070475926801" value="2*" />
+        <property name="value" nameId="tpee.1070475926801" value="1*" />
       </node>
     </node>
     <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4235813073708261329">
@@ -3191,6 +3191,9 @@
             <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="6299401094195527125">
               <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
             </node>
+            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483574014">
+              <property name="value" nameId="tpee.1068580123138" value="false" />
+            </node>
           </node>
         </node>
         <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="6299401094195527196">
@@ -3200,23 +3203,8 @@
             <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="6299401094195527198">
               <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
             </node>
-          </node>
-        </node>
-        <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="6299401094195527139">
-          <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="6299401094195527140">
-            <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
-            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195527077" resolveInfo="Jahresvereinbarung drucken" />
-            <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="6299401094195527144">
-              <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
-            </node>
-          </node>
-        </node>
-        <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="6299401094195527246">
-          <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="6299401094195527247">
-            <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
-            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195527215" resolveInfo="Infovertrag drucken" />
-            <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="6299401094195527249">
-              <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483574023">
+              <property name="value" nameId="tpee.1068580123138" value="false" />
             </node>
           </node>
         </node>
@@ -4197,7 +4185,7 @@
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="7749746279199145701">
           <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
           <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7749746279199145703">
-            <property name="value" nameId="tpee.1070475926801" value="Lieferspesen [Eur/T]" />
+            <property name="value" nameId="tpee.1070475926801" value="Logistikkosten [Eur/T]" />
           </node>
         </node>
       </node>
@@ -7334,6 +7322,9 @@
               <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="4642584926047856260">
                 <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
               </node>
+              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483574050">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
+              </node>
             </node>
           </node>
           <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="4642584926047856261">
@@ -7342,6 +7333,9 @@
               <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
               <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="4642584926047856263">
                 <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+              </node>
+              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483574059">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
           </node>
@@ -7352,6 +7346,9 @@
               <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="4642584926047856266">
                 <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
               </node>
+              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483574068">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
+              </node>
             </node>
           </node>
           <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="4642584926047856267">
@@ -7360,6 +7357,9 @@
               <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195527215" resolveInfo="Infovertrag drucken" />
               <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="4642584926047856269">
                 <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+              </node>
+              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483574077">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
           </node>
@@ -7700,6 +7700,9 @@
               <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="4642584926047856529">
                 <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
               </node>
+              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483573976">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
+              </node>
             </node>
           </node>
           <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="4642584926047856530">
@@ -7708,6 +7711,9 @@
               <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195527165" resolveInfo="Vorschau Infovertrag" />
               <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="4642584926047856532">
                 <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+              </node>
+              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483573985">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
           </node>
@@ -7718,6 +7724,9 @@
               <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="4642584926047856535">
                 <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
               </node>
+              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483573994">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
+              </node>
             </node>
           </node>
           <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="4642584926047856536">
@@ -7726,6 +7735,9 @@
               <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195527215" resolveInfo="Infovertrag drucken" />
               <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="4642584926047856538">
                 <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+              </node>
+              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2486274901483574003">
+                <property name="value" nameId="tpee.1068580123138" value="true" />
               </node>
             </node>
           </node>
@@ -8078,24 +8090,6 @@
       <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4642584926047856819">
         <property name="value" nameId="tpee.1070475926801" value="Zahlungskonditionen Rechnungseingang" />
       </node>
-      <node role="onLoad" roleId="sgb.940368958464182898" type="sgb.OnLoadDelegateForm" typeId="sgb.940368958464182890" id="4642584926047856820">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4642584926047856821">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4642584926047856822">
-            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4642584926047856823">
-              <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="4642584926047856824">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
-                <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4642584926047856825">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
-                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4642584926047856826">
-                  <property name="value" nameId="tpee.1070475926801" value="ONLOAD: loading Zahlungskonditionen!" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="4642584926047856827">
       <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
@@ -8248,7 +8242,7 @@
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="7749746279199041457">
           <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
           <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7749746279199041458">
-            <property name="value" nameId="tpee.1070475926801" value="Lieferspesen [Eur/T]" />
+            <property name="value" nameId="tpee.1070475926801" value="Logistikkosten [Eur/T]" />
           </node>
         </node>
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="7749746279199041459">
@@ -9464,20 +9458,6 @@
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
                       <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4188926249118506015">
                         <property name="value" nameId="tpee.1068580123138" value="false" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4188926249118506016">
-                  <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4188926249118506017">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="4188926249118506018">
-                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
-                      <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="4188926249118506019">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
-                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4188926249118506020">
-                        <property name="value" nameId="tpee.1070475926801" value="loading Zahlungskonditionen!" />
                       </node>
                     </node>
                   </node>
