@@ -848,7 +848,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="489969188104799455">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="489969188104799429" resolveInfo="LieferantenZuordnung.StatusZuordnung" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="489969188104799429" resolveInfo="LieferantenZuordnung.StatusZuordnung" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799456">

@@ -1007,7 +1007,7 @@
       <property name="propertyName" nameId="tpee.1201371481316" value="posStatus" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5431775171647229145" />
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5431775171647312373">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="6216169895915811440" resolveInfo="RekoAkt.RekoAktPosStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="6216169895915811440" resolveInfo="RekoAkt.RekoAktPosStatus" />
       </node>
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5431775171647229147">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5431775171647229148" />
@@ -1021,7 +1021,7 @@
       <property name="propertyName" nameId="tpee.1201371481316" value="rechStatus" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5431775171647229152" />
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5431775171647312374">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5767126987992203330" resolveInfo="RekoAkt.Status" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5767126987992203330" resolveInfo="RekoAkt.Status" />
       </node>
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5431775171647229154">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5431775171647229155" />
@@ -1035,7 +1035,7 @@
       <property name="propertyName" nameId="tpee.1201371481316" value="status" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5431775171647229159" />
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5431775171647229160">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5431775171647229033" resolveInfo="RekoAkt.RekoAktStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5431775171647229033" resolveInfo="RekoAkt.RekoAktStatus" />
       </node>
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5431775171647229161">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5431775171647229162" />
@@ -2073,7 +2073,7 @@
       <property name="propertyName" nameId="tpee.1201371481316" value="status" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1533050384292561326" />
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="1533050384292561332">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5920854874382210368" resolveInfo="RekoPos.RekoAktPosStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5920854874382210368" resolveInfo="RekoPos.RekoAktPosStatus" />
       </node>
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="1533050384292561328">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="1533050384292561329" />

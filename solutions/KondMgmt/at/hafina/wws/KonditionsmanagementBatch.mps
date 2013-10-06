@@ -4,7 +4,6 @@
   <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
   <language namespace="ec097fca-5b84-41f2-847d-6a5690cae277(org.modellwerkstatt.objectflow)" />
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
-  <language namespace="cccc689c-f365-4862-a8b6-34ecddf8ee26(jetbrains.mps.baseLanguage.dates)" />
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language-engaged-on-generation namespace="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
   <import index="1v76" modelUID="r:4df79bb7-19c1-4cef-b629-1e238f25be49(at.hafina.wws.Konditionsmanagement)" version="2" />
@@ -21,7 +20,6 @@
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
-  <import index="tp6x" modelUID="r:00000000-0000-4000-0000-011c895903d5(jetbrains.mps.baseLanguage.dates.structure)" version="1" implicit="yes" />
   <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="108" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <roots>
@@ -121,7 +119,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="7841632776554179614">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="7841632776554179604" resolveInfo="StatusBatch" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="7841632776554179604" resolveInfo="BatchProcKmsw.StatusBatch" />
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4235813073708234154" />
@@ -877,7 +875,7 @@
                                                   <node role="expression" roleId="tpee.1079359253376" type="tpee.AndExpression" typeId="tpee.1080120340718" id="4235813073708234515">
                                                     <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="4235813073708234516">
                                                       <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708234517">
-                                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668026" resolveInfo="AbrechnungsZyklus" />
+                                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668026" resolveInfo="KonditionsTyp.AbrechnungsZyklus" />
                                                         <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668027" resolveInfo="KeinZyklus" />
                                                       </node>
                                                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708234518">
@@ -899,7 +897,7 @@
                                                         </node>
                                                       </node>
                                                       <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708234525">
-                                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                                                         <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667987" resolveInfo="EuroProLogEH" />
                                                       </node>
                                                     </node>
@@ -919,7 +917,7 @@
                                                             </node>
                                                           </node>
                                                           <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708234534">
-                                                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                                                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                                                             <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667990" resolveInfo="EuroProzent" />
                                                           </node>
                                                         </node>
@@ -933,7 +931,7 @@
                                                             </node>
                                                           </node>
                                                           <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708234539">
-                                                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                                                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                                                             <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667991" resolveInfo="ProzVonZuwachs" />
                                                           </node>
                                                         </node>
@@ -950,7 +948,7 @@
                                                       </node>
                                                       <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708234544">
                                                         <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668001" resolveInfo="EkNetto" />
-                                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667998" resolveInfo="Kalkulationsstufe" />
+                                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667998" resolveInfo="KonditionsTyp.Kalkulationsstufe" />
                                                       </node>
                                                     </node>
                                                   </node>
@@ -1683,7 +1681,7 @@
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4235813073708234805" resolveInfo="lieferantWareVgo" />
                           </node>
                           <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="7841632776554189147">
-                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.9189473878729344258" resolveInfo="WeStatus" />
+                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
                             <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3kk.9189473878729344262" resolveInfo="Fertig" />
                           </node>
                           <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7841632776554189151" />
@@ -2777,7 +2775,7 @@
                       </node>
                     </node>
                     <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235311">
-                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="BelegTyp" />
+                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
                       <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3kk.2578114784133153194" resolveInfo="WEPreisStuetzung" />
                     </node>
                   </node>
@@ -3007,7 +3005,7 @@
                                 <link role="property" roleId="tpee.1201385237847" targetNodeId="3kk.2578114784133153408" />
                               </node>
                             </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="tp6x.NotNullOperation" typeId="tp6x.1209036122468" id="4235813073708235406" />
+                            <node role="operation" roleId="tpee.1197027833540" type=".jetbrains.mps.baseLanguage.dates.structure.NotNullOperation" id="4235813073708235406" />
                           </node>
                         </node>
                       </node>
@@ -3841,7 +3839,7 @@
                         </node>
                       </node>
                       <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235755">
-                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="BelegTyp" />
+                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
                         <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3kk.2578114784133153194" resolveInfo="WEPreisStuetzung" />
                       </node>
                     </node>
@@ -3945,7 +3943,7 @@
                           <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708235799">
                             <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235800">
                               <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667983" resolveInfo="Rechnung" />
-                              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667982" resolveInfo="KonditionsGewaehrung" />
+                              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667982" resolveInfo="KonditionsTyp.KonditionsGewaehrung" />
                             </node>
                             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708235801">
                               <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708235802">
@@ -3975,7 +3973,7 @@
                             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="4235813073708235812">
                               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708235813">
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235814">
-                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                                   <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667990" resolveInfo="EuroProzent" />
                                 </node>
                                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708235815">
@@ -3997,7 +3995,7 @@
                                   </node>
                                 </node>
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235822">
-                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667998" resolveInfo="Kalkulationsstufe" />
+                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667998" resolveInfo="KonditionsTyp.Kalkulationsstufe" />
                                   <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668001" resolveInfo="EkNetto" />
                                 </node>
                               </node>
@@ -4049,7 +4047,7 @@
                                       </node>
                                     </node>
                                     <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235846">
-                                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                                       <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667987" resolveInfo="EuroProLogEH" />
                                     </node>
                                   </node>
@@ -4063,7 +4061,7 @@
                                       </node>
                                     </node>
                                     <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235851">
-                                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                                       <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667990" resolveInfo="EuroProzent" />
                                     </node>
                                   </node>
@@ -4078,7 +4076,7 @@
                                     </node>
                                   </node>
                                   <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235856">
-                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667988" resolveInfo="LogEHProLogEH" />
                                   </node>
                                 </node>
@@ -4093,7 +4091,7 @@
                                   </node>
                                 </node>
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708235861">
-                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                                   <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667991" resolveInfo="ProzVonZuwachs" />
                                 </node>
                               </node>
@@ -4861,7 +4859,7 @@
                       <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4235813073708236179">
                         <property name="name" nameId="tpck.1169194664001" value="wirkung" />
                         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="4235813073708236180">
-                          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                         </node>
                         <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708236181">
                           <node role="operand" roleId="tpee.1197027771414" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="4235813073708236182">
@@ -4897,7 +4895,7 @@
                               <node role="condition" roleId="tpee.1068580123160" type="tpee.AndExpression" typeId="tpee.1080120340718" id="4235813073708236195">
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708236196">
                                   <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236197">
-                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2578114784133141822" resolveInfo="ZeitkennungTyp" />
+                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2578114784133141822" resolveInfo="KonditionsTyp.ZeitkennungTyp" />
                                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2578114784133141826" resolveInfo="ValidVonBis" />
                                   </node>
                                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708236198">
@@ -5555,7 +5553,7 @@
                               </node>
                             </node>
                             <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236453">
-                              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="BelegTyp" />
+                              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
                               <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3kk.2578114784133153194" resolveInfo="WEPreisStuetzung" />
                             </node>
                           </node>
@@ -5738,7 +5736,7 @@
                             </node>
                           </node>
                           <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236558">
-                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="BelegTyp" />
+                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
                             <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3kk.2578114784133153194" resolveInfo="WEPreisStuetzung" />
                           </node>
                         </node>
@@ -5752,7 +5750,7 @@
           <node role="condition" roleId="tpee.1068580123160" type="tpee.AndExpression" typeId="tpee.1080120340718" id="4235813073708236559">
             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="6497286539887852277">
               <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="6497286539887852308">
-                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.9189473878729344258" resolveInfo="WeStatus" />
+                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
                 <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3kk.9189473878729344262" resolveInfo="Fertig" />
               </node>
               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6497286539887852233">
@@ -5775,7 +5773,7 @@
               </node>
               <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236570">
                 <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3kk.2578114784133153194" resolveInfo="WEPreisStuetzung" />
-                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="BelegTyp" />
+                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3kk.2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
               </node>
             </node>
           </node>
@@ -5897,7 +5895,7 @@
                             </node>
                           </node>
                           <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4852544886934672206">
-                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                             <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134178" resolveInfo="Aktiv" />
                           </node>
                         </node>
@@ -6091,7 +6089,7 @@
                     </node>
                     <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708236680">
                       <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236681">
-                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsWirkung" />
+                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415667986" resolveInfo="KonditionsTyp.KonditionsWirkung" />
                         <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415667991" resolveInfo="ProzVonZuwachs" />
                       </node>
                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708236682">
@@ -6159,7 +6157,7 @@
                     <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4235813073708236708">
                       <property name="name" nameId="tpck.1169194664001" value="oldStatus" />
                       <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="1823082938958109390">
-                        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                       </node>
                       <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708236711">
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="4235813073708236712">
@@ -6425,7 +6423,7 @@
                               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4235813073708236818">
                                 <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708236819">
                                   <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236820">
-                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133107069" resolveInfo="StatusUebernahme" />
+                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133107069" resolveInfo="AnforderungKopf.StatusUebernahme" />
                                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133107071" resolveInfo="Ok" />
                                   </node>
                                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708236821">
@@ -6454,7 +6452,7 @@
                                 <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4235813073708236831">
                                   <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4235813073708236832">
                                     <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="1757475292399312281">
-                                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="JaNeinStatus" />
+                                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="KonditionsTyp.JaNeinStatus" />
                                       <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668068" resolveInfo="Ja" />
                                     </node>
                                     <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708236834">
@@ -6482,7 +6480,7 @@
                               </node>
                               <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708236842">
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="1757475292399312250">
-                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="JaNeinStatus" />
+                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="KonditionsTyp.JaNeinStatus" />
                                   <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668069" resolveInfo="Nein" />
                                 </node>
                                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708236844">
@@ -6755,7 +6753,7 @@
                                   <node role="condition" roleId="tpee.1068580123160" type="tpee.OrExpression" typeId="tpee.1080223426719" id="4235813073708236957">
                                     <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708236958">
                                       <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="1757475292399312174">
-                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="JaNeinStatus" />
+                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="KonditionsTyp.JaNeinStatus" />
                                         <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668069" resolveInfo="Nein" />
                                       </node>
                                       <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708236960">
@@ -6777,7 +6775,7 @@
                                         </node>
                                       </node>
                                       <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236967">
-                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133107069" resolveInfo="StatusUebernahme" />
+                                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133107069" resolveInfo="AnforderungKopf.StatusUebernahme" />
                                         <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133107071" resolveInfo="Ok" />
                                       </node>
                                     </node>
@@ -6818,7 +6816,7 @@
                               </node>
                               <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236982">
                                 <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134181" resolveInfo="Erledigt" />
-                                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                               </node>
                             </node>
                           </node>
@@ -6839,7 +6837,7 @@
                       </node>
                       <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708236988">
                         <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134180" resolveInfo="Auslaufend" />
-                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                        <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                       </node>
                     </node>
                   </node>
@@ -7048,7 +7046,7 @@
                               </node>
                               <node role="condition" roleId="tpee.1068580123160" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708237079">
                                 <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708237080">
-                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                                   <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134180" resolveInfo="Auslaufend" />
                                 </node>
                                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708237081">
@@ -7064,7 +7062,7 @@
                                 <node role="statementList" roleId="tpee.1206060644605" type="tpee.StatementList" typeId="tpee.1068580123136" id="4235813073708237085" />
                                 <node role="condition" roleId="tpee.1206060619838" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708237086">
                                   <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708237087">
-                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134181" resolveInfo="Erledigt" />
                                   </node>
                                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708237088">
@@ -7123,7 +7121,7 @@
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4235813073708237109">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4235813073708237110">
                               <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708237111">
-                                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                                 <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134181" resolveInfo="Erledigt" />
                               </node>
                               <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708237112">
@@ -7159,7 +7157,7 @@
                             </node>
                           </node>
                           <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708237124">
-                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                            <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                             <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134181" resolveInfo="Erledigt" />
                           </node>
                         </node>
@@ -7186,7 +7184,7 @@
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="4235813073708237133">
                           <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="4235813073708237134">
                             <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708237135">
-                              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                               <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134180" resolveInfo="Auslaufend" />
                             </node>
                             <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708237136">
@@ -7202,7 +7200,7 @@
                             <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4235813073708237140">
                               <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4235813073708237141">
                                 <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708237142">
-                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
+                                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
                                   <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134180" resolveInfo="Auslaufend" />
                                 </node>
                                 <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708237143">
