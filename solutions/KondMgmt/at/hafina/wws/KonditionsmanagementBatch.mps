@@ -81,11 +81,6 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4235813073708234107" />
-      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="8419730774115884163">
-        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="8419730774115884164">
-          <property name="text" nameId="un0u.6525155817177697682" value="This is the Key!" />
-        </node>
-      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="4235813073708234108">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />

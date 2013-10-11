@@ -3435,13 +3435,13 @@
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415667990">
         <property name="name" nameId="tpck.1169194664001" value="EuroProzent" />
         <property name="value" nameId="un0u.4533072425307715682" value="PRZBG" />
-        <property name="shortDesc" nameId="un0u.1085421207787009238" value="% Ber.Gl." />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="% von Ber.Gl." />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Prozent von Berechnungsgrundlage" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415667991">
         <property name="name" nameId="tpck.1169194664001" value="ProzVonZuwachs" />
         <property name="value" nameId="un0u.4533072425307715682" value="PRZZU" />
-        <property name="shortDesc" nameId="un0u.1085421207787009238" value="% Umsatz+" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="% von Umsatz+" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Prozent von Umsatzzuwachs" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415667992">
