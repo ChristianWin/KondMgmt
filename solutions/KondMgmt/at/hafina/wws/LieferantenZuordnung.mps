@@ -3106,6 +3106,7 @@
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="489969188104799555">
         <property name="value" nameId="tpee.1070475926801" value="KM_KS_ZUORDNUNG_NEU" />
       </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.OptimisticOption" typeId="r5tz.774207833082448725" id="4531049588542794384" />
     </node>
     <node role="entityReference" roleId="r5tz.871579071900209323" type="r5tz.EntityReference" typeId="r5tz.871579071900209276" id="489969188104799553">
       <link role="classConcept" roleId="r5tz.871579071900209277" targetNodeId="489969188104799428" resolveInfo="LieferantenZuordnung" />

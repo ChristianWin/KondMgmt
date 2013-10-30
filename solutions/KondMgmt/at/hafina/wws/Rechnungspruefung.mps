@@ -241,7 +241,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapBestellung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315302" resolveInfo="Bestellung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332915">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332916">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315303" />
@@ -281,7 +281,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapRechnung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315383" resolveInfo="Rechnung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332927">
-        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332928">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315384" />

@@ -3564,50 +3564,50 @@
         <property name="name" nameId="tpck.1169194664001" value="Poenalen" />
         <property name="value" nameId="un0u.4533072425307715682" value="POEN" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Pönale" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Pönale" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Pönalen" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668015">
         <property name="name" nameId="tpck.1169194664001" value="Fakturakondition" />
         <property name="value" nameId="un0u.4533072425307715682" value="FAKT" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Fakturakondition" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Fakturakondition" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Fakturenkonditionen" />
       </node>
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2075539057415668016" />
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668017">
         <property name="name" nameId="tpck.1169194664001" value="Fixbonus" />
         <property name="value" nameId="un0u.4533072425307715682" value="BONIF" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Fixbonus" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Fixbonus" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Fixboni" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668018">
         <property name="name" nameId="tpck.1169194664001" value="Produktbonus" />
         <property name="value" nameId="un0u.4533072425307715682" value="BONIP" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Produktbonus" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Produktbonus" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Produktboni" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668019">
         <property name="name" nameId="tpck.1169194664001" value="Steigerungsbonus" />
         <property name="value" nameId="un0u.4533072425307715682" value="BONIS" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Steigerungsbonus" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Steigerungsbonus" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Steigerungsboni" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668020">
         <property name="name" nameId="tpck.1169194664001" value="Marketingbonus" />
         <property name="value" nameId="un0u.4533072425307715682" value="BONIM" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Marketingbonus" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Marketingbonus" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Marketingboni" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668021">
         <property name="name" nameId="tpck.1169194664001" value="Sondervereinbarung" />
         <property name="value" nameId="un0u.4533072425307715682" value="SOVB" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Sondervereinbarung" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Sondervereinbarung" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Sondervereinbarungen" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668022">
         <property name="name" nameId="tpck.1169194664001" value="SonderaktionenM50Proz" />
         <property name="value" nameId="un0u.4533072425307715682" value="SOAKT" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Sonderaktion -50%" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Sonderaktion minus 50%" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Sonderaktionen minus 50%" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668023">
         <property name="name" nameId="tpck.1169194664001" value="Mengenangebote" />
@@ -3626,6 +3626,12 @@
         <property name="value" nameId="un0u.4533072425307715682" value="TUG" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="T&amp;G" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="T&amp;G" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4560032055438076036">
+        <property name="name" nameId="tpck.1169194664001" value="Baguette" />
+        <property name="value" nameId="un0u.4533072425307715682" value="BAG" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Baguette" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Baguette" />
       </node>
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="2075539057415668026">
@@ -5782,13 +5788,13 @@
       <property name="name" nameId="tpck.1169194664001" value="StatusZeh" />
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668639">
         <property name="name" nameId="tpck.1169194664001" value="Aktiv" />
-        <property name="value" nameId="un0u.4533072425307715682" value="A" />
+        <property name="value" nameId="un0u.4533072425307715682" value="1" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Aktiv" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Aktiv" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668640">
         <property name="name" nameId="tpck.1169194664001" value="Inaktiv" />
-        <property name="value" nameId="un0u.4533072425307715682" value="I" />
+        <property name="value" nameId="un0u.4533072425307715682" value="0" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Inaktiv" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Inaktiv" />
       </node>
@@ -7466,7 +7472,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapBglEinheitFromList" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2075539057415668705" resolveInfo="BglEinheitFromList" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258040894">
-        <property name="value" nameId="tpee.1070475926801" value="KM_BGL_EINHEIT" />
+        <property name="value" nameId="tpee.1070475926801" value="KM_BGL_EINHEIT_NEU" />
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.OptimisticOption" typeId="r5tz.774207833082448725" id="1833852648258040895" />
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="1833852648258040896">
@@ -7477,7 +7483,7 @@
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1833852648258040898" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="1833852648258040899">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258040900">
-            <property name="value" nameId="tpee.1070475926801" value="S_KM_BGL_EINHEIT" />
+            <property name="value" nameId="tpee.1070475926801" value="S_KM_BGL_EINHEIT_NEU" />
           </node>
         </node>
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.NotnullOption" typeId="r5tz.774207833082557430" id="1833852648258040901" />
@@ -7541,7 +7547,7 @@
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1833852648258040962" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="1833852648258040963">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258040964">
-            <property name="value" nameId="tpee.1070475926801" value="S_KM_KONDITIONS_TYP" />
+            <property name="value" nameId="tpee.1070475926801" value="S_KM_KONDITIONS_TYP_NEU" />
           </node>
         </node>
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.NotnullOption" typeId="r5tz.774207833082557430" id="1833852648258040965" />
@@ -7986,7 +7992,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapZeilenEinheitFromList" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2075539057415668637" resolveInfo="ZeilenEinheitFromList" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041206">
-        <property name="value" nameId="tpee.1070475926801" value="KM_ZEILEN_EH" />
+        <property name="value" nameId="tpee.1070475926801" value="KM_ZEILEN_EH_NEU" />
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.OptimisticOption" typeId="r5tz.774207833082448725" id="1833852648258041207" />
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="1833852648258041208">
@@ -7997,7 +8003,7 @@
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1833852648258041210" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="1833852648258041211">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041212">
-            <property name="value" nameId="tpee.1070475926801" value="S_KM_ZEILEN_EH" />
+            <property name="value" nameId="tpee.1070475926801" value="S_KM_ZEILEN_EH_NEU" />
           </node>
         </node>
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.NotnullOption" typeId="r5tz.774207833082557430" id="1833852648258041213" />
@@ -8038,7 +8044,7 @@
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="1833852648258041220">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2075539057415668674" resolveInfo="isAktiv" />
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041221">
-          <property name="value" nameId="tpee.1070475926801" value="COD_IS_AKT" />
+          <property name="value" nameId="tpee.1070475926801" value="BOOL_IS_AKT" />
         </node>
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.SizeOption" typeId="r5tz.774207833082557411" id="9143642913023165481">
           <property name="value" nameId="r5tz.774207833082557412" value="1" />

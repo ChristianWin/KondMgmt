@@ -2141,12 +2141,6 @@
             <property name="value" nameId="tpee.1070475926801" value="id,titel" />
           </node>
         </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415670094">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286651" resolveInfo="setInputFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670095">
-            <property name="value" nameId="tpee.1070475926801" value="titel" />
-          </node>
-        </node>
       </node>
       <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670096">
         <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670097">
@@ -2196,12 +2190,6 @@
           <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
           <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670112">
             <property name="value" nameId="tpee.1070475926801" value="id,titel" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415670113">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286651" resolveInfo="setInputFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670114">
-            <property name="value" nameId="tpee.1070475926801" value="titel" />
           </node>
         </node>
       </node>

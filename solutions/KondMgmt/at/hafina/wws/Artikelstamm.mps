@@ -711,7 +711,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapArtikelstamm" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133105812" resolveInfo="Artikel" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332614">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.artikelstamm@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.artikelstamm" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332615">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133105818" />
@@ -785,7 +785,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapLieferantenrabattgruppe" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106194" resolveInfo="Lieferantenrabattgruppe" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332640">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_lief_rab_grp@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_lief_rab_grp" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332641">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106200" />
@@ -828,7 +828,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapSteuerKennZeichen" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106238" resolveInfo="Steuerkennzeichen" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332657">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.STA_STEUER@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.STA_STEUER" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332658">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106295" />
@@ -1028,28 +1028,45 @@
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="2987152407130827136">
               <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="2987152407130827137">
                 <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="2987152407130827138">
-                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2987152407130827139">
-                    <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2987152407130827140">
-                      <node role="rValue" roleId="tpee.1068498886297" type="r5tz.QueryFromMap" typeId="r5tz.774207833082573402" id="2987152407130827141">
-                        <property name="readOnly" nameId="r5tz.3572493221071471725" value="true" />
-                        <link role="entityMapping" roleId="r5tz.8172309840348950203" targetNodeId="3687014260077332639" resolveInfo="MapLieferantenrabattgruppe" />
-                        <node role="queryOperation" roleId="r5tz.774207833082779687" type="r5tz.GetQuery" typeId="r5tz.6435836305144935126" id="2987152407130827142">
-                          <node role="argument" roleId="r5tz.6435836305144935143" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2987152407130827143">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2987152407130827144">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2987152407130827149" resolveInfo="it" />
-                            </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="2987152407130827145">
-                              <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="2578114784133105847" resolveInfo="lieferantenRabattGruppe" />
-                            </node>
-                          </node>
-                        </node>
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="4560032055440666643">
+                    <node role="condition" roleId="tpee.1068580123160" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="4560032055440666684">
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="4560032055440666687">
+                        <property name="value" nameId="tpee.1068580320021" value="0" />
                       </node>
-                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2987152407130827146">
-                        <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2987152407130827147">
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4560032055440666661">
+                        <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="4560032055440666646">
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2987152407130827149" resolveInfo="it" />
                         </node>
-                        <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2987152407130827148">
-                          <link role="property" roleId="tpee.1201385237847" targetNodeId="2578114784133105847" resolveInfo="lieferantenRabattGruppe" />
+                        <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="4560032055440666668">
+                          <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="2578114784133105847" />
+                        </node>
+                      </node>
+                    </node>
+                    <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="4560032055440666645">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2987152407130827139">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2987152407130827140">
+                          <node role="rValue" roleId="tpee.1068498886297" type="r5tz.QueryFromMap" typeId="r5tz.774207833082573402" id="2987152407130827141">
+                            <property name="readOnly" nameId="r5tz.3572493221071471725" value="true" />
+                            <link role="entityMapping" roleId="r5tz.8172309840348950203" targetNodeId="3687014260077332639" resolveInfo="MapLieferantenrabattgruppe" />
+                            <node role="queryOperation" roleId="r5tz.774207833082779687" type="r5tz.GetQuery" typeId="r5tz.6435836305144935126" id="2987152407130827142">
+                              <node role="argument" roleId="r5tz.6435836305144935143" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2987152407130827143">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2987152407130827144">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2987152407130827149" resolveInfo="it" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="2987152407130827145">
+                                  <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="2578114784133105847" resolveInfo="lieferantenRabattGruppe" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2987152407130827146">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2987152407130827147">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2987152407130827149" resolveInfo="it" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2987152407130827148">
+                              <link role="property" roleId="tpee.1201385237847" targetNodeId="2578114784133105847" resolveInfo="lieferantenRabattGruppe" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>

@@ -1164,7 +1164,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsKopf" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106353" resolveInfo="ForderungsKopf" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332682">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_kopf@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_kopf" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332684">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106392" />
@@ -1411,7 +1411,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsPosition" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106687" resolveInfo="ForderungsPosition" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332773">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_pos@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_pos" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.ReferenceMapping" typeId="r5tz.8440420766105723374" id="3687014260077332775">
         <link role="property" roleId="r5tz.8440420766105723376" targetNodeId="2578114784133106693" />
@@ -1530,7 +1530,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsSubTyp" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106921" resolveInfo="ForderungsSubTyp" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332821">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen_subtyp@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen_subtyp" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332822">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106927" />
@@ -1606,7 +1606,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsTyp" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133107008" resolveInfo="ForderungsTyp" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332851">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332852">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133107014" />
