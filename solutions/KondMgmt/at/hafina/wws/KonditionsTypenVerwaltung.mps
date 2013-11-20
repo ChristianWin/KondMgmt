@@ -3588,8 +3588,8 @@
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668019">
         <property name="name" nameId="tpck.1169194664001" value="Steigerungsbonus" />
         <property name="value" nameId="un0u.4533072425307715682" value="BONIS" />
-        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Steigerungsbonus" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Steigerungsboni" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Umsatzbonus" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Umsatzboni" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668020">
         <property name="name" nameId="tpck.1169194664001" value="Marketingbonus" />
