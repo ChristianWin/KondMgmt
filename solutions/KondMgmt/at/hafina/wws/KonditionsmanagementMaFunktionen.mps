@@ -42,7 +42,6 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9143642913023241094" />
       <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="9143642913023241095" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.NotNullOption" typeId="un0u.2576785704220735078" id="9143642913023241096" />
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9143642913023241097">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -57,7 +56,6 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="9143642913023241103">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="o9h8.2578114784133151242" resolveInfo="Mitarbeiter" />
       </node>
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.NotNullOption" typeId="un0u.2576785704220735078" id="9143642913023241104" />
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9143642913023241105">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -70,7 +68,6 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9143642913023241111" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.NotNullOption" typeId="un0u.2576785704220735078" id="9143642913023241112" />
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9143642913023241113">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -87,16 +84,12 @@
         <property name="min" nameId="un0u.8614254524338490550" value="1" />
         <property name="max" nameId="un0u.8614254524338490551" value="1" />
       </node>
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.NotNullOption" typeId="un0u.2576785704220735078" id="9143642913023241121" />
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9143642913023241122" />
     <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="9143642913023241123">
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="9143642913023241124" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9143642913023241125" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9143642913023241126" />
-    </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="9143642913023241127">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="9143642913023241088" />
     </node>
   </root>
   <root id="9143642913023241128">

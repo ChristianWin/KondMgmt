@@ -1906,6 +1906,12 @@
             <property name="value" nameId="tpee.1068580123138" value="false" />
           </node>
         </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="891173884599870785">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130111929" resolveInfo="setNumberFormat" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="891173884599870787">
+            <property name="value" nameId="tpee.1070475926801" value="##0.000" />
+          </node>
+        </node>
       </node>
       <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="4188926249117657877">
         <property name="delegateType" nameId="sgb.5005516259701333684" value="IntegerDelegate" />
@@ -3230,7 +3236,7 @@
             <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
           </node>
           <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="4625314885898247068">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.4543697696097621323" resolveInfo="Weitere(r) Verhandler für MPreis" />
+            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.4543697696097621323" resolveInfo="Weitere Verhandler für MPreis" />
             <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4625314885898247069" resolveInfo="WeitereMaVertragFC" />
           </node>
         </node>
@@ -3600,7 +3606,7 @@
                   </node>
                   <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="8191840627594377044">
                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668068" resolveInfo="Ja" />
-                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="KonditionsTyp.JaNeinStatus" />
+                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="JaNeinStatus" />
                   </node>
                 </node>
               </node>
@@ -3725,7 +3731,7 @@
                 </node>
               </node>
               <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708261735">
-                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Kondition.Status" />
+                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133134175" resolveInfo="Status" />
                 <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133134176" resolveInfo="Angelegt" />
               </node>
             </node>
@@ -3760,7 +3766,7 @@
                           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4235813073708261752">
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708261753">
                               <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708261754">
-                                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668035" resolveInfo="KonditionsTyp.KonditionsTypKennung" />
+                                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668035" resolveInfo="KonditionsTypKennung" />
                                 <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668040" resolveInfo="PoenaleRechnungsLegungsFehler" />
                               </node>
                               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708261755">
@@ -3835,7 +3841,7 @@
                             <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="4235813073708261786">
                               <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4235813073708261787">
                                 <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668039" resolveInfo="PoenaleFehllieferung" />
-                                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668035" resolveInfo="KonditionsTyp.KonditionsTypKennung" />
+                                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668035" resolveInfo="KonditionsTypKennung" />
                               </node>
                               <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708261788">
                                 <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4235813073708261789">
@@ -4276,6 +4282,12 @@
           <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
           <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7749746279199145703">
             <property name="value" nameId="tpee.1070475926801" value="Logistikkostensatz [Eur/Kg]" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="891173884599975633">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130111929" resolveInfo="setNumberFormat" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="891173884599975634">
+            <property name="value" nameId="tpee.1070475926801" value="##0.000" />
           </node>
         </node>
       </node>
@@ -7404,8 +7416,6 @@
       <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="JvbListeTF" />
       <property name="selectFirst" nameId="sgb.6827528231168019613" value="true" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.5176117387240966651" resolveInfo="SelectJahresvereinbarungenCriteria" />
-      <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.5176117387240966737" resolveInfo="vertraege" />
       <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="4642584926047856233">
         <property name="title" nameId="sgb.7968457660428854083" value="Aktionen" />
         <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="4642584926047857055">
@@ -7633,7 +7643,7 @@
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4642584926051068802">
         <property name="width" nameId="sgb.8089681376575535775" value="100" />
         <property name="label" nameId="sgb.8089681376575535776" value="Logistikkostensatz" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0.00" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0.000" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="4642584926051068805">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.9143642913023163971" />
         </node>
@@ -7670,8 +7680,10 @@
         <property name="value" nameId="tpee.1070475926801" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4642584926047856300">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.5176117387240966651" resolveInfo="SelectJahresvereinbarungenCriteria" />
+    <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="6188112537892611626">
+      <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6188112537892611627">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+      </node>
     </node>
   </root>
   <root id="4642584926047856513">
@@ -7680,8 +7692,6 @@
       <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="AngelegteJvbListeTF" />
       <property name="selectFirst" nameId="sgb.6827528231168019613" value="true" />
-      <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.5176117387240966737" resolveInfo="vertraege" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.5176117387240966651" resolveInfo="SelectJahresvereinbarungenCriteria" />
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249116862975">
         <property name="width" nameId="sgb.8089681376575535775" value="50" />
         <property name="label" nameId="sgb.8089681376575535776" value="Jahr" />
@@ -7790,7 +7800,7 @@
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249116863002">
         <property name="width" nameId="sgb.8089681376575535775" value="100" />
         <property name="label" nameId="sgb.8089681376575535776" value="Logistikkostensatz" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0.00" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0.000" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="4188926249116863003">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.9143642913023163971" resolveInfo="lieferSpesen" />
         </node>
@@ -7931,8 +7941,10 @@
         <property name="value" nameId="tpee.1070475926801" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4642584926047856518">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.5176117387240966651" resolveInfo="SelectJahresvereinbarungenCriteria" />
+    <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="6188112537891614117">
+      <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6188112537891614120">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+      </node>
     </node>
   </root>
   <root id="4642584926047856607">
@@ -8547,6 +8559,12 @@
           <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
           <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7749746279199041458">
             <property name="value" nameId="tpee.1070475926801" value="Logistikkostensatz [Eur/Kg]" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="891173884600080484">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130111929" resolveInfo="setNumberFormat" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="891173884600080485">
+            <property name="value" nameId="tpee.1070475926801" value="##0.000" />
           </node>
         </node>
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="7749746279199041459">

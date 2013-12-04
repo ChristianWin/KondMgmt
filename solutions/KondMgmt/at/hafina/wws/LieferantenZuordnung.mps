@@ -104,7 +104,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Zuordnung erstellen" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="489969188104799428" resolveInfo="LieferantenZuordnung" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="489969188104799264">
-        <property name="name" nameId="tpck.1169194664001" value="Übernehmen" />
+        <property name="name" nameId="tpck.1169194664001" value="Ok" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="SAVE_CONCLUSION" />
         <property name="hotkey" nameId="un0u.5725201540142890812" value="SAVE" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="489969188104799265">
@@ -291,16 +291,17 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="un0u.SessionOperation" typeId="un0u.5196923997523085572" id="4442777440661821328">
-          <node role="operationCall" roleId="un0u.3364325080894064531" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="4442777440661821329">
+      </node>
+    </node>
+    <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="6188112537889605558">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889605559">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6188112537889605560">
+          <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="4442777440661821329">
             <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5141888444944041810" resolveInfo="checkinLieferantenZuordnung" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="4442777440661821333">
               <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
             </node>
-          </node>
-          <node role="ex" roleId="un0u.594565203028725343" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4442777440661821334">
-            <property name="value" nameId="tpee.1070475926801" value="Zuordnung speichern" />
           </node>
         </node>
       </node>
@@ -327,7 +328,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Zuordnung bearbeiten" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="489969188104799428" resolveInfo="LieferantenZuordnung" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="489969188104799290">
-        <property name="name" nameId="tpck.1169194664001" value="Übernehmen" />
+        <property name="name" nameId="tpck.1169194664001" value="Ok" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="SAVE_CONCLUSION" />
         <property name="hotkey" nameId="un0u.5725201540142890812" value="SAVE" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="489969188104799291">
@@ -576,25 +577,16 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="un0u.SessionOperation" typeId="un0u.5196923997523085572" id="489969188106421788">
-          <node role="operationCall" roleId="un0u.3364325080894064531" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="489969188106421789">
-            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
+      </node>
+    </node>
+    <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="6188112537889605550">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889605551">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6188112537889605552">
+          <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="6188112537889605553">
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5141888444944041810" resolveInfo="checkinLieferantenZuordnung" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="489969188106421790">
+            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="6188112537889605554">
               <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
-            </node>
-          </node>
-          <node role="ex" roleId="un0u.594565203028725343" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="489969188106450772">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="489969188106451259">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="489969188106451244">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="489969188106451264">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="489969188104799441" />
-              </node>
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="489969188106421792">
-              <property name="value" nameId="tpee.1070475926801" value="Zuordnung wurde editiert: Id=" />
             </node>
           </node>
         </node>
@@ -607,7 +599,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="489969188106510914">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="489969188106510952">
             <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="489969188106510955">
-              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="LieferantenZuordnung.StatusZuordnung" />
+              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="StatusZuordnung" />
               <link role="element" roleId="un0u.1707329006119989962" targetNodeId="489969188104799433" resolveInfo="Geloescht" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="489969188106510930">
@@ -620,25 +612,16 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="un0u.SessionOperation" typeId="un0u.5196923997523085572" id="489969188106408265">
-          <node role="operationCall" roleId="un0u.3364325080894064531" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="489969188106408266">
+      </node>
+    </node>
+    <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="6188112537889605568">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889605569">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6188112537889605570">
+          <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="489969188106408266">
             <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5141888444944041810" resolveInfo="checkinLieferantenZuordnung" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="489969188106408276">
               <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
-            </node>
-          </node>
-          <node role="ex" roleId="un0u.594565203028725343" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="489969188106450754">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="489969188106451238">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="489969188106451223">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="489969188106451243">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="489969188104799441" />
-              </node>
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="489969188106408278">
-              <property name="value" nameId="tpee.1070475926801" value="Zuordnung gelöscht: Id=" />
             </node>
           </node>
         </node>
@@ -656,7 +639,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Zuordnungen anzeigen" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="489969188106082374" resolveInfo="LieferantenZuordnungenView" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="489969188106451193">
-        <property name="name" nameId="tpck.1169194664001" value="Tabelle speichern" />
+        <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="489969188106451194">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="489969188106451195">
             <node role="statement" roleId="tpee.1068581517665" type="un0u.DoneCommand" typeId="un0u.1881524139085552751" id="489969188106451196" />
@@ -816,7 +799,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Gelöscht" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Gelöscht" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="489969188104799434" />
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="489969188104799435" />
     <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="489969188104799436">
@@ -848,7 +830,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="489969188104799455">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="489969188104799429" resolveInfo="LieferantenZuordnung.StatusZuordnung" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="489969188104799429" resolveInfo="StatusZuordnung" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799456">
@@ -1030,7 +1012,7 @@
               <node role="queryOperation" roleId="r5tz.774207833082779687" type="r5tz.WhereQuery" typeId="r5tz.774207833082734171" id="489969188106304691">
                 <node role="filter" roleId="r5tz.774207833082734172" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="489969188106304708">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="489969188106304711">
-                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="LieferantenZuordnung.StatusZuordnung" />
+                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="StatusZuordnung" />
                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="489969188104799433" resolveInfo="Geloescht" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="489969188106304693">
@@ -1511,7 +1493,7 @@
                 <node role="filter" roleId="r5tz.774207833082734172" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="489969188106450810">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="489969188106450811">
                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="489969188104799433" resolveInfo="Geloescht" />
-                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="LieferantenZuordnung.StatusZuordnung" />
+                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="StatusZuordnung" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="489969188106450812">
                     <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="5141888444943636906" />
@@ -1990,7 +1972,7 @@
                 <node role="filter" roleId="r5tz.774207833082734172" type="tpee.AndExpression" typeId="tpee.1080120340718" id="489969188106304726">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="489969188106304744">
                     <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="489969188106304747">
-                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="LieferantenZuordnung.StatusZuordnung" />
+                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="StatusZuordnung" />
                       <link role="element" roleId="un0u.1707329006119989962" targetNodeId="489969188104799433" resolveInfo="Geloescht" />
                     </node>
                     <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="489969188106304729">
@@ -3178,7 +3160,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Zuordnung bearbeiten" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="489969188104799428" resolveInfo="LieferantenZuordnung" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="5828583037094767967">
-        <property name="name" nameId="tpck.1169194664001" value="Übernehmen" />
+        <property name="name" nameId="tpck.1169194664001" value="Ok" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="SAVE_CONCLUSION" />
         <property name="hotkey" nameId="un0u.5725201540142890812" value="SAVE" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="5828583037094767968">
@@ -3292,28 +3274,6 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="un0u.SessionOperation" typeId="un0u.5196923997523085572" id="5828583037094767958">
-          <node role="operationCall" roleId="un0u.3364325080894064531" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="5828583037094767959">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5141888444944041810" resolveInfo="checkinLieferantenZuordnung" />
-            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5828583037094767960">
-              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
-            </node>
-          </node>
-          <node role="ex" roleId="un0u.594565203028725343" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5828583037094767961">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5828583037094767962">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5828583037094767963">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5828583037094767964">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="489969188104799441" resolveInfo="id" />
-              </node>
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5828583037094767965">
-              <property name="value" nameId="tpee.1070475926801" value="Zuordnung wurde editiert: Id=" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node role="enabledWhen" roleId="un0u.6525155817177860576" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="5828583037094943658">
@@ -3327,6 +3287,19 @@
         </node>
       </node>
     </node>
+    <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="6188112537889605547">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889605548">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6188112537889605549">
+          <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="5828583037094767959">
+            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5141888444944041810" resolveInfo="checkinLieferantenZuordnung" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5828583037094767960">
+              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root id="489969188106525065">
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="5828583037094910204">
@@ -3337,7 +3310,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Zuordnung bearbeiten" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="489969188104799428" resolveInfo="LieferantenZuordnung" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="5828583037094768103">
-        <property name="name" nameId="tpck.1169194664001" value="Übernehmen" />
+        <property name="name" nameId="tpck.1169194664001" value="Ok" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="SAVE_CONCLUSION" />
         <property name="hotkey" nameId="un0u.5725201540142890812" value="SAVE" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="5828583037094768104">
@@ -3624,28 +3597,6 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="un0u.SessionOperation" typeId="un0u.5196923997523085572" id="5828583037094767983">
-          <node role="operationCall" roleId="un0u.3364325080894064531" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="5828583037094767984">
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5141888444944041810" resolveInfo="checkinLieferantenZuordnung" />
-            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5828583037094767985">
-              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
-            </node>
-          </node>
-          <node role="ex" roleId="un0u.594565203028725343" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5828583037094767986">
-            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5828583037094767987">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5828583037094767988">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5828583037094767989">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="489969188104799441" resolveInfo="id" />
-              </node>
-            </node>
-            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5828583037094767990">
-              <property name="value" nameId="tpee.1070475926801" value="Zuordnung wurde editiert: Id=" />
-            </node>
-          </node>
-        </node>
       </node>
     </node>
     <node role="enabledWhen" roleId="un0u.6525155817177860576" type="tpee.OrExpression" typeId="tpee.1080223426719" id="5828583037094943720">
@@ -3670,6 +3621,19 @@
           </node>
         </node>
         <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="5828583037094943705" />
+      </node>
+    </node>
+    <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="6188112537889605563">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889605564">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6188112537889605565">
+          <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="5828583037094767984">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5141888444944041810" resolveInfo="checkinLieferantenZuordnung" />
+            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5828583037094767985">
+              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </root>

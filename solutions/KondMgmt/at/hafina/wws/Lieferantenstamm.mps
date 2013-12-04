@@ -175,9 +175,6 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2578114784133151200" />
     </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="2578114784133151209">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="2578114784133151127" />
-    </node>
     <node role="property" roleId="tpee.1201374247313" type="tpee.Property" typeId="tpee.1201370618622" id="1823082938957759156">
       <property name="propertyName" nameId="tpee.1201371481316" value="nameAndId" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1823082938957759157" />
@@ -290,9 +287,6 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133151121" resolveInfo="Lieferant" />
       </node>
     </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="2578114784133151241">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="2578114784133151222" />
-    </node>
   </root>
   <root id="3687014260077332871">
     <node role="entityReference" roleId="r5tz.871579071900209323" type="r5tz.EntityReference" typeId="r5tz.871579071900209276" id="3687014260077332872">
@@ -305,7 +299,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapLieferantenstamm" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151121" resolveInfo="Lieferant" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332875">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332876">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151127" />
@@ -389,7 +383,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapVorgangsort" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151216" resolveInfo="Vorgangsort" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332901">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332902">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151222" />

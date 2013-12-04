@@ -334,9 +334,6 @@
         </node>
       </node>
     </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="2578114784133151319">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="2578114784133151248" />
-    </node>
     <node role="property" roleId="tpee.1201374247313" type="tpee.Property" typeId="tpee.1201370618622" id="2578114784133151320">
       <property name="propertyName" nameId="tpee.1201371481316" value="totalName" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2578114784133151321" />
@@ -381,7 +378,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapMitarbeiter" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151242" resolveInfo="Mitarbeiter" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332582">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332583">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151248" />
@@ -483,7 +480,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapAppManager" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2078185796870049952" resolveInfo="MitarbeiterAppRechte" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2078185796870051297">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="2078185796870051300">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="4943983682752418081" />
@@ -906,9 +903,6 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2078185796870049955" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2078185796870049956" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2078185796870049957" />
-    </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="2078185796870049959">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="4943983682752418081" />
     </node>
   </root>
 </model>

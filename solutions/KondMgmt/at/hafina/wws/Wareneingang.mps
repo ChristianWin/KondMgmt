@@ -106,7 +106,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="WZK" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Wareneingang Zentral Korrektur" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2578114784133153198" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="9189473878729344317">
       <property name="name" nameId="tpck.1169194664001" value="Empfaenger" />
@@ -128,7 +127,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Konzern" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Konzern (Baguette)" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9189473878729344318" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="9189473878729344336">
       <property name="name" nameId="tpck.1169194664001" value="LieferantTyp" />
@@ -144,7 +142,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Konzern" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Konzern" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9189473878729344337" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="9189473878729344258">
       <property name="name" nameId="tpck.1169194664001" value="WeStatus" />
@@ -166,7 +163,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="fertig" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="fertig" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9189473878729344259" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="9189473878729344380">
       <property name="name" nameId="tpck.1169194664001" value="Waehrung" />
@@ -176,7 +172,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Euro" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Euro" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9189473878729344381" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="9189473878729344433">
       <property name="name" nameId="tpck.1169194664001" value="SubBelegTyp" />
@@ -240,7 +235,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Retoure" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Lieferantenretoure" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9189473878729344434" />
     </node>
     <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="2578114784133153199">
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2578114784133153200" />
@@ -342,7 +336,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="2578114784133153221">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2578114784133153191" resolveInfo="BelegTyp" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153225">
@@ -396,7 +390,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344322">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344317" resolveInfo="WareneingangsBeleg.Empfaenger" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344317" resolveInfo="Empfaenger" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344323">
@@ -424,7 +418,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344340">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344336" resolveInfo="WareneingangsBeleg.LieferantTyp" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344336" resolveInfo="LieferantTyp" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153251">
@@ -492,7 +486,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344263">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153269">
@@ -518,7 +512,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344383">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344380" resolveInfo="WareneingangsBeleg.Waehrung" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344380" resolveInfo="Waehrung" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344384">
@@ -628,7 +622,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344445">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344433" resolveInfo="WareneingangsBeleg.SubBelegTyp" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344433" resolveInfo="SubBelegTyp" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153295">
@@ -810,9 +804,6 @@
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="hqqe.489969188104799428" resolveInfo="LieferantenZuordnung" />
         </node>
       </node>
-    </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="2578114784133153330">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="2578114784133153204" />
     </node>
     <node role="property" roleId="tpee.1201374247313" type="tpee.Property" typeId="tpee.1201370618622" id="9189473878729345160">
       <property name="propertyName" nameId="tpee.1201371481316" value="isStornoJN" />
@@ -1770,7 +1761,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Preisänderung" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Preisänderung (2 Positionen)" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9189473878729344621" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="9189473878729344711">
       <property name="name" nameId="tpck.1169194664001" value="Steuercode" />
@@ -1786,7 +1776,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="20%" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="20%" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9189473878729344712" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="9189473878729345373">
       <property name="name" nameId="tpck.1169194664001" value="ArtikelArt" />
@@ -1802,7 +1791,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Sammelart." />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Sammelartikel" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="9189473878729345374" />
     </node>
     <node role="constructor" roleId="tpee.1068390468201" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="2578114784133153332">
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2578114784133153333" />
@@ -1902,7 +1890,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729345377">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729345373" resolveInfo="WareneingangsBelegPos.ArtikelArt" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729345373" resolveInfo="ArtikelArt" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133153365">
@@ -2025,7 +2013,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344627">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344620" resolveInfo="WareneingangsBelegPos.MitPosition" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344620" resolveInfo="MitPosition" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344628">
@@ -2139,7 +2127,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344647">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344380" resolveInfo="WareneingangsBeleg.Waehrung" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344380" resolveInfo="Waehrung" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2324983695296015980">
@@ -2269,7 +2257,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729344717">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344711" resolveInfo="WareneingangsBelegPos.Steuercode" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344711" resolveInfo="Steuercode" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344718">
@@ -2635,9 +2623,6 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="9189473878729344889" />
-    </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="8104064611855093927">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="9189473878729366265" />
     </node>
     <node role="property" roleId="tpee.1201374247313" type="tpee.Property" typeId="tpee.1201370618622" id="2578114784133153479">
       <property name="propertyName" nameId="tpee.1201371481316" value="pos" />
@@ -3384,7 +3369,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegDetail" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153190" resolveInfo="WareneingangsBeleg" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332964">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729345379">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133153204" />
@@ -3735,7 +3720,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegPosDetail" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153331" resolveInfo="WareneingangsBelegPos" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077333003">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366263">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="9189473878729366265" resolveInfo="id" />
@@ -4309,7 +4294,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegSimple" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153190" resolveInfo="WareneingangsBeleg" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9189473878729366282">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366283">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133153204" resolveInfo="id" />
@@ -4418,7 +4403,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegPosSimple" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153331" resolveInfo="WareneingangsBelegPos" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9189473878729366398">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366399">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="9189473878729366265" resolveInfo="id" />
@@ -4611,7 +4596,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="8104064611855118092">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2578114784133153191" resolveInfo="BelegTyp" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729912063">
@@ -4625,7 +4610,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729912069">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="8104064611855122134">
@@ -4718,7 +4703,7 @@
               </node>
             </node>
             <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="9189473878729912087">
-              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
               <link role="element" roleId="un0u.1707329006119989962" targetNodeId="9189473878729344262" resolveInfo="Fertig" />
             </node>
           </node>
@@ -4878,7 +4863,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Wareneingangsbeleg Liste" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="9189473878729344210" resolveInfo="WareneingangsBelegCriteria" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="3243506821944269044">
-        <property name="name" nameId="tpck.1169194664001" value="&lt;&lt; Auswahl" />
+        <property name="name" nameId="tpck.1169194664001" value="&lt;&lt; Zurück" />
         <property name="hotkey" nameId="un0u.5725201540142890812" value="BACK" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="3243506821944269045">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="3243506821944269046">
@@ -6044,7 +6029,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="9189473878729366849">
         <property name="name" nameId="tpck.1169194664001" value="codStatus" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729366851">
-          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
         </node>
       </node>
     </node>
@@ -6556,13 +6541,13 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="9189473878729366957">
         <property name="name" nameId="tpck.1169194664001" value="codStatus" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729366958">
-          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="8104064611855118166">
         <property name="name" nameId="tpck.1169194664001" value="codTyp" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="8104064611855121747">
-          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2578114784133153191" resolveInfo="WareneingangsBeleg.BelegTyp" />
+          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2578114784133153191" resolveInfo="BelegTyp" />
         </node>
       </node>
     </node>
@@ -6904,7 +6889,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="9189473878729911553">
         <property name="name" nameId="tpck.1169194664001" value="codStatus" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729911554">
-          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WareneingangsBeleg.WeStatus" />
+          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
         </node>
       </node>
     </node>

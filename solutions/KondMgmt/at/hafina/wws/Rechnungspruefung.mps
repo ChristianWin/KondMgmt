@@ -158,9 +158,6 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5141182004961315332" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5141182004961315333" />
     </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="5141182004961315334">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="5141182004961315303" />
-    </node>
   </root>
   <root id="5141182004961315383">
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5141182004961315384">
@@ -220,9 +217,6 @@
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5141182004961315421" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5141182004961315422" />
     </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="5141182004961315423">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="5141182004961315384" />
-    </node>
   </root>
   <root id="3687014260077332911">
     <node role="entityReference" roleId="r5tz.871579071900209323" type="r5tz.EntityReference" typeId="r5tz.871579071900209276" id="3687014260077332912">
@@ -241,7 +235,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapBestellung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315302" resolveInfo="Bestellung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332915">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332916">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315303" />
@@ -281,7 +275,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapRechnung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315383" resolveInfo="Rechnung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332927">
-        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung" />
+        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332928">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315384" />
@@ -719,7 +713,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Gepr" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Geprüft" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5431775171647229040" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="6216169895915811440">
       <property name="name" nameId="tpck.1169194664001" value="RekoAktPosStatus" />
@@ -753,7 +746,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="P&amp;M-Diff" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Preis- und Mengendifferenz" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6216169895915811443" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="5767126987992203330">
       <property name="name" nameId="tpck.1169194664001" value="Status" />
@@ -769,7 +761,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Ok" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Ok" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5767126987992203333" />
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="3689891114548414432">
       <property name="name" nameId="tpck.1169194664001" value="RechnungsTyp" />
@@ -803,7 +794,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="RB" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Rechnungsberichtigung" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3689891114548414433" />
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5431775171647229041">
       <property name="doc" nameId="un0u.1234268821833508554" value="Primary Key / ?vorläufig? interne Rechnungsnummer -&gt; Barcodenummer" />
@@ -1007,7 +997,7 @@
       <property name="propertyName" nameId="tpee.1201371481316" value="posStatus" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5431775171647229145" />
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5431775171647312373">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="6216169895915811440" resolveInfo="RekoAkt.RekoAktPosStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="6216169895915811440" resolveInfo="RekoAktPosStatus" />
       </node>
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5431775171647229147">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5431775171647229148" />
@@ -1021,7 +1011,7 @@
       <property name="propertyName" nameId="tpee.1201371481316" value="rechStatus" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5431775171647229152" />
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5431775171647312374">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5767126987992203330" resolveInfo="RekoAkt.Status" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5767126987992203330" resolveInfo="Status" />
       </node>
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5431775171647229154">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5431775171647229155" />
@@ -1035,7 +1025,7 @@
       <property name="propertyName" nameId="tpee.1201371481316" value="status" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5431775171647229159" />
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5431775171647229160">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5431775171647229033" resolveInfo="RekoAkt.RekoAktStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5431775171647229033" resolveInfo="RekoAktStatus" />
       </node>
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5431775171647229161">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5431775171647229162" />
@@ -1052,7 +1042,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5431775171647229170">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5431775171647229171">
             <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="5431775171647229172">
-              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="5431775171647229033" resolveInfo="RekoAkt.RekoAktStatus" />
+              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="5431775171647229033" resolveInfo="RekoAktStatus" />
               <link role="element" roleId="un0u.1707329006119989962" targetNodeId="5431775171647229034" resolveInfo="None" />
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5431775171647229173">
@@ -1200,9 +1190,6 @@
         </node>
       </node>
     </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="5431775171647229275">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="5431775171647229041" />
-    </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5431775171647229276">
       <property name="doc" nameId="un0u.1234268821833508554" value="createdAt (auditable by objectflow)" />
       <property name="propertyName" nameId="tpee.1201371481316" value="zzCreatedAt" />
@@ -1287,7 +1274,7 @@
       <property name="name" nameId="tpck.1169194664001" value="ListView" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="5431775171647228455" resolveInfo="RekoAkt" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="5431775171647229322">
-        <property name="name" nameId="tpck.1169194664001" value="&lt;&lt; Auswahl" />
+        <property name="name" nameId="tpck.1169194664001" value="&lt;&lt; Zurück" />
         <property name="hotkey" nameId="un0u.5725201540142890812" value="BACK" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="5431775171647229323">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="5431775171647229324">
@@ -1949,7 +1936,6 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="P&amp;M-Diff" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Preis- und Mengendifferenz" />
       </node>
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5920854874382210374" />
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="6216169895915811484">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -2073,7 +2059,7 @@
       <property name="propertyName" nameId="tpee.1201371481316" value="status" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="1533050384292561326" />
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="1533050384292561332">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5920854874382210368" resolveInfo="RekoPos.RekoAktPosStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5920854874382210368" resolveInfo="RekoAktPosStatus" />
       </node>
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="1533050384292561328">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="1533050384292561329" />
@@ -2081,12 +2067,6 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="1533050384292561331" />
         </node>
       </node>
-    </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="7248366578582825310">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="6216169895915811484" />
-    </node>
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="5815083858767525095">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="6216169895915811632" />
     </node>
   </root>
   <root id="7363575455771156034">
@@ -2123,9 +2103,6 @@
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7363575455771156035" />
-    <node role="equalProperties" roleId="un0u.836579671455715533" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="7248366578582608899">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="7363575455771156040" />
-    </node>
   </root>
   <root id="5333574192358916524">
     <node role="target" roleId="tpsk.1196851079482" type="tpsk.TargetDeclaration" typeId="tpsk.1196851099544" id="7906484462219106813">
