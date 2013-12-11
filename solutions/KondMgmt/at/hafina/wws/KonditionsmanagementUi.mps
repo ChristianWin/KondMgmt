@@ -8834,6 +8834,18 @@
                   </node>
                 </node>
               </node>
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990181028086">
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990181028087">
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.525054990181027919" resolveInfo="Kondition aktivieren" />
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181028088">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181028089">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4642584926047856924">
               <property name="width" nameId="sgb.8089681376575535775" value="1" />
@@ -9087,6 +9099,59 @@
             <property name="selectFirst" nameId="sgb.6827528231168019613" value="true" />
             <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
             <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.2578114784133122825" resolveInfo="stammKonditionenForList" />
+            <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="525054990181027623">
+              <property name="title" nameId="sgb.7968457660428854083" value="edit" />
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990181027624">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="ADD_107" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990181027625">
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.8992908132168934638" resolveInfo="Neue Kondition" />
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027626">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990181027627">
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.8992908132168934656" resolveInfo="Konditionenliste" />
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708260191" resolveInfo="ChooseKonditionsTypFC" />
+                  </node>
+                </node>
+              </node>
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.MenuSeperator" typeId="sgb.5005516259700566609" id="525054990181027628" />
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990181027629">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990181027630">
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195545370" resolveInfo="Kondition bearbeiten" />
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990181027631">
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.6299401094195545408" resolveInfo="Kondition Grunddaten" />
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708261335" resolveInfo="EditKonditionGrunddatenFC" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027632">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027633">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+                  </node>
+                </node>
+              </node>
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.MenuSeperator" typeId="sgb.5005516259700566609" id="525054990181027649" />
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990181027650">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="DELETE_127" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990181027651">
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.8992908132168934575" resolveInfo="Kondition löschen" />
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990181027652">
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.8992908132168934611" resolveInfo="Are You Sure" />
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708260174" resolveInfo="AreYouSureFC" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027653">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027654">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505756">
               <property name="width" nameId="sgb.8089681376575535775" value="1" />
               <property name="label" nameId="sgb.8089681376575535776" value="Pos" />
@@ -9285,6 +9350,26 @@
             <property name="name" nameId="tpck.1169194664001" value="JvbDetailIkTF" />
             <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
             <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.2578114784133122825" resolveInfo="stammKonditionenForList" />
+            <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="525054990181027763">
+              <property name="title" nameId="sgb.7968457660428854083" value="edit" />
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990181027764">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990181027765">
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.8992908132168908237" resolveInfo="Interne Konditionsdaten Editieren" />
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027766">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027767">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+                  </node>
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990181027768">
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708260791" resolveInfo="EditInterneKonditionsDatenFC" />
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.8992908132168908262" resolveInfo="Interne Konditionsdaten" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505832">
               <property name="width" nameId="sgb.8089681376575535775" value="1" />
               <property name="label" nameId="sgb.8089681376575535776" value="Pos" />
@@ -9419,6 +9504,43 @@
             <property name="name" nameId="tpck.1169194664001" value="JvbDetailFkTF" />
             <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
             <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.2578114784133122825" resolveInfo="stammKonditionenForList" />
+            <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="525054990181027775">
+              <property name="title" nameId="sgb.7968457660428854083" value="edit" />
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990181027776">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990181027777">
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195548183" resolveInfo="Fakturierung editieren" />
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027778">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027779">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+                  </node>
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990181027780">
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.6299401094195548208" resolveInfo="Fakturierung Kondition" />
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708260268" resolveInfo="EditFaktKonditionFC" />
+                  </node>
+                </node>
+              </node>
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990181027781">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="F3_114" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990181027782">
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.8992908132168852280" resolveInfo="Fälligkeit editieren" />
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027783">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027784">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+                  </node>
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990181027785">
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708260251" resolveInfo="EditFaelligkeitFC" />
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.8992908132168853670" resolveInfo="Faelligkeit" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505878">
               <property name="width" nameId="sgb.8089681376575535775" value="1" />
               <property name="label" nameId="sgb.8089681376575535776" value="Pos" />
@@ -9517,6 +9639,56 @@
             <property name="name" nameId="tpck.1169194664001" value="JvbDetailFk2TF" />
             <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.2578114784133134442" resolveInfo="zeitKennungen" />
             <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+            <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="525054990182859366">
+              <property name="title" nameId="sgb.7968457660428854083" value="Edit" />
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990182859367">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="ADD_107" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990182859368">
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195544642" resolveInfo="Neue Zeitkennung erstellen" />
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990182859369">
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708262623" resolveInfo="EditZeitkennungFC" />
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.6299401094195544750" resolveInfo="Zeitkennung" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990182859370">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990182859371">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+                  </node>
+                </node>
+              </node>
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990182859372">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990182859373">
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195532003" resolveInfo="Zeitkennung bearbeiten" />
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990182859374">
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708262623" resolveInfo="EditZeitkennungFC" />
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.6299401094195532072" resolveInfo="Zeitkennung" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990182859375">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990182859376">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133141821" resolveInfo="Zeitkennung" />
+                  </node>
+                </node>
+              </node>
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990182859377">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="DELETE_127" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990182859378">
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.6299401094195545165" resolveInfo="Zeitkennung löschen" />
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990182859379">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990182859380">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133141821" resolveInfo="Zeitkennung" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505919">
               <property name="width" nameId="sgb.8089681376575535775" value="120" />
               <property name="label" nameId="sgb.8089681376575535776" value="Zeitkennungstyp" />
@@ -9600,6 +9772,26 @@
             <property name="name" nameId="tpck.1169194664001" value="JvbDetailVtTF" />
             <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
             <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.2578114784133122825" resolveInfo="stammKonditionenForList" />
+            <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="525054990181027815">
+              <property name="title" nameId="sgb.7968457660428854083" value="edit" />
+              <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="525054990181027816">
+                <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
+                <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="525054990181027817">
+                  <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.8992908132168908301" resolveInfo="Vertragstext bearbeiten" />
+                  <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027818">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                  </node>
+                  <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="525054990181027819">
+                    <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
+                  </node>
+                  <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="525054990181027820">
+                    <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="4235813073708262603" resolveInfo="EditVertragsTextKonditionFC" />
+                    <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.8992908132168908307" resolveInfo="Vertragstext" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505949">
               <property name="width" nameId="sgb.8089681376575535775" value="1" />
               <property name="label" nameId="sgb.8089681376575535776" value="Pos" />

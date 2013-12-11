@@ -378,7 +378,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapMitarbeiter" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151242" resolveInfo="Mitarbeiter" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332582">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332583">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151248" />
@@ -480,7 +480,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapAppManager" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2078185796870049952" resolveInfo="MitarbeiterAppRechte" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2078185796870051297">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="2078185796870051300">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="4943983682752418081" />

@@ -12,6 +12,7 @@
   <import index="kpc2" modelUID="f:java_stub#ea0a61ee-f622-4ba3-98cb-da85ddcdead1#org.joda.time(objectflow#271985905034872643/org.joda.time@java_stub)" version="-1" />
   <import index="d5a5" modelUID="f:java_stub#ea0a61ee-f622-4ba3-98cb-da85ddcdead1#org.joda.time.base(objectflow#271985905034872643/org.joda.time.base@java_stub)" version="-1" />
   <import index="mma5" modelUID="r:bd45a0c2-84a2-4253-86a2-c9c160a8121d(org.modellwerkstatt.forms.FormsRT)" version="1" />
+  <import index="hqqe" modelUID="r:a21d359e-b425-4f5f-af67-8aa3c0a353f4(at.hafina.wws.LieferantenZuordnung)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="108" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
@@ -21,6 +22,7 @@
   <import index="28jr" modelUID="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" version="-1" implicit="yes" />
   <import index="k7g3" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" version="-1" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" implicit="yes" />
   <roots>
     <node type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="2578114784133105812">
       <property name="name" nameId="tpck.1169194664001" value="Artikel" />
@@ -767,7 +769,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapArtikelstamm" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133105812" resolveInfo="Artikel" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332614">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.artikelstamm@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.artikelstamm" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332615">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133105818" />
@@ -841,7 +843,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapLieferantenrabattgruppe" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106194" resolveInfo="Lieferantenrabattgruppe" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332640">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_lief_rab_grp@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_lief_rab_grp" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332641">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106200" />
@@ -884,7 +886,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapSteuerKennZeichen" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106238" resolveInfo="Steuerkennzeichen" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332657">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.STA_STEUER@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.STA_STEUER" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332658">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106295" />
@@ -940,7 +942,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapArtikelEkAbzuege" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="7676363187707302681" resolveInfo="ArtikelEkAbzug" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7676363187707302888">
-        <property name="value" nameId="tpee.1070475926801" value="KM_ARTIKEL_ABZUG" />
+        <property name="value" nameId="tpee.1070475926801" value="KM_ART_NTO_ABZUG" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="7676363187707302889">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="7676363187707302689" />
@@ -950,7 +952,7 @@
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="7676363187707302929" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="7676363187707302931">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7676363187707302932">
-            <property name="value" nameId="tpee.1070475926801" value="S_KM_ARTIKEL_ABZUG" />
+            <property name="value" nameId="tpee.1070475926801" value="S_KM_ART_NTO_ABZUG" />
           </node>
         </node>
       </node>
@@ -1028,6 +1030,12 @@
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.SizeOption" typeId="r5tz.774207833082557411" id="704531202309097725">
           <property name="value" nameId="r5tz.774207833082557412" value="40" />
           <property name="decvalue" nameId="r5tz.774207833082557413" value="0" />
+        </node>
+      </node>
+      <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="4483720003146524927">
+        <link role="property" roleId="r5tz.871579071900248751" targetNodeId="4483720003146524823" />
+        <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4483720003146524928">
+          <property name="value" nameId="tpee.1070475926801" value="COD_PREIS_LINIE" />
         </node>
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.OptimisticOption" typeId="r5tz.774207833082448725" id="704531202309136197" />
@@ -2271,6 +2279,24 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4483720003146524862">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4483720003146524900">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4483720003146524919">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="4483720003146524904" />
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="4483720003146524925">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="4483720003146524823" />
+              </node>
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4483720003146524878">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="4483720003146524863">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308804307" resolveInfo="artikelAbzug" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="4483720003146524884">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="4483720003146524823" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="704531202308804564">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="704531202308804565">
             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308804307" resolveInfo="artikelAbzug" />
@@ -2371,6 +2397,14 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="4483720003146524840">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="4483720003146524856">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="4483720003146524859" />
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.LocalPropertyReference" typeId="tpee.5862977038373003187" id="4483720003146524841">
+              <link role="property" roleId="tpee.5862977038373003188" targetNodeId="4483720003146524823" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="7676363187707302720">
@@ -2380,6 +2414,18 @@
         <property name="value" nameId="un0u.4533072425307715682" value="B" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Biersteuer" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Biersteuer" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="6922158259141538843">
+        <property name="name" nameId="tpck.1169194664001" value="Sektsteuer" />
+        <property name="value" nameId="un0u.4533072425307715682" value="S" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Sektsteuer" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Sektsteuer" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146432121">
+        <property name="name" nameId="tpck.1169194664001" value="Transportkosten" />
+        <property name="value" nameId="un0u.4533072425307715682" value="T" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Transportkosten" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Transportkosten" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="7676363187707302723">
         <property name="name" nameId="tpck.1169194664001" value="AbzugAllgemein" />
@@ -2402,6 +2448,12 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Fixbetrag" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Fixbetrag pro EEH" />
       </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146451951">
+        <property name="name" nameId="tpck.1169194664001" value="EuroProKilo" />
+        <property name="value" nameId="un0u.4533072425307715682" value="K" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Eur/Kg" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Euro pro Kilo" />
+      </node>
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="7676363187707324369">
       <property name="name" nameId="tpck.1169194664001" value="AbzugStatus" />
@@ -2422,6 +2474,51 @@
         <property name="value" nameId="un0u.4533072425307715682" value="X" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Gelöscht" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Gelöscht" />
+      </node>
+    </node>
+    <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="4483720003146524829">
+      <property name="name" nameId="tpck.1169194664001" value="Preislinie" />
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146524830">
+        <property name="value" nameId="un0u.4533072425307715682" value="MGH" />
+        <property name="name" nameId="tpck.1169194664001" value="Grosshandel" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Grosshandel" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Grosshandel" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146524831">
+        <property name="value" nameId="un0u.4533072425307715682" value="BAG" />
+        <property name="name" nameId="tpck.1169194664001" value="Baguette" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Baguette" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Baguette" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146524832">
+        <property name="name" nameId="tpck.1169194664001" value="Blumenshop" />
+        <property name="value" nameId="un0u.4533072425307715682" value="FLO" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Blumenshop" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Blumenshop" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146524833">
+        <property name="value" nameId="un0u.4533072425307715682" value="MPR" />
+        <property name="name" nameId="tpck.1169194664001" value="MPreisFiliale" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="MPreis Filiale" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="MPreis Filiale" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146524834">
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="MItalia" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="MItalia" />
+        <property name="value" nameId="un0u.4533072425307715682" value="ITL" />
+        <property name="name" nameId="tpck.1169194664001" value="MItalia" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146524835">
+        <property name="value" nameId="un0u.4533072425307715682" value="TUG" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="T&amp;G" />
+        <property name="name" nameId="tpck.1169194664001" value="TuG" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="T&amp;G" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="4483720003146524860">
+        <property name="name" nameId="tpck.1169194664001" value="Alle" />
+        <property name="value" nameId="un0u.4533072425307715682" value="ALL" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Alle Preislinien" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Alle Preislinien" />
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="7676363187707302689">
@@ -2589,6 +2686,25 @@
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="kpc2.~LocalDate" resolveInfo="LocalDate" />
       </node>
     </node>
+    <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="4483720003146524823">
+      <property name="doc" nameId="un0u.1234268821833508554" value="_" />
+      <property name="propertyName" nameId="tpee.1201371481316" value="preisLinie" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4483720003146524824" />
+      <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="4483720003146524825">
+        <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="4483720003146524826" />
+        <node role="defaultSetAccessor" roleId="tpee.1202078082794" type="tpee.DefaultSetAccessor" typeId="tpee.1202077725299" id="4483720003146524827">
+          <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4483720003146524828" />
+        </node>
+      </node>
+      <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="4483720003146524836">
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="4483720003146524829" resolveInfo="Preislinie" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="4483720003146524837">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="4483720003146524838">
+          <property name="text" nameId="un0u.6525155817177697682" value="Preislinie (bei Transportkosten)" />
+        </node>
+      </node>
+    </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="704531202309097713">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
       <property name="propertyName" nameId="tpee.1201371481316" value="beschreibung" />
@@ -2638,6 +2754,142 @@
       </node>
       <node role="pageInit" roleId="un0u.1881524139084590808" type="un0u.PageInitConceptFunc" typeId="un0u.6525155817176738379" id="7676363187707324408">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7676363187707324409">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="525054990185189068">
+            <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="525054990185189069">
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="525054990185189126">
+                <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="525054990185189127">
+                  <property name="name" nameId="tpck.1169194664001" value="artikelInUse" />
+                  <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="525054990185189128">
+                    <node role="elementType" roleId="tp2q.1151689745422" type="tpee.IntegerType" typeId="tpee.1070534370425" id="525054990185189129" />
+                  </node>
+                  <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189130">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189131">
+                      <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189132">
+                        <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185189133">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7676363187707324414" resolveInfo="criteria" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185189134">
+                          <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324776" resolveInfo="abzuege" />
+                        </node>
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="525054990185189135">
+                        <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="525054990185189136">
+                          <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="525054990185189137">
+                            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185189138">
+                              <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="525054990185189139">
+                                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189140">
+                                  <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185189141">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7676363187707324414" resolveInfo="criteria" />
+                                  </node>
+                                  <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185189142">
+                                    <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324606" resolveInfo="typ" />
+                                  </node>
+                                </node>
+                                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189143">
+                                  <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185189144">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185189146" resolveInfo="it" />
+                                  </node>
+                                  <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185189145">
+                                    <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707302712" resolveInfo="abzugTyp" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="525054990185189146">
+                            <property name="name" nameId="tpck.1169194664001" value="it" />
+                            <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="525054990185189147" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tp2q.SelectOperation" typeId="tp2q.1202128969694" id="525054990185189148">
+                      <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="525054990185189149">
+                        <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="525054990185189150">
+                          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185189151">
+                            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189152">
+                              <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185189153">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185189155" resolveInfo="it" />
+                              </node>
+                              <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185189154">
+                                <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="7676363187707302705" resolveInfo="artikel" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="525054990185189155">
+                          <property name="name" nameId="tpck.1169194664001" value="it" />
+                          <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="525054990185189156" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185189157">
+                <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="525054990185189158">
+                  <node role="lValue" roleId="tpee.1068498886295" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="525054990185189159">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="308340049802651308" resolveInfo="artikelLieferant" />
+                  </node>
+                  <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189160">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189161">
+                      <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="525054990185341724">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="308340049802651308" resolveInfo="artikelLieferant" />
+                      </node>
+                      <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="525054990185189168">
+                        <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="525054990185189169">
+                          <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="525054990185189170">
+                            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185189171">
+                              <node role="expression" roleId="tpee.1068580123156" type="tpee.NotExpression" typeId="tpee.1081516740877" id="525054990185189172">
+                                <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189173">
+                                  <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="525054990185189174">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185189127" resolveInfo="artikelInUse" />
+                                  </node>
+                                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.ContainsOperation" typeId="tp2q.1172254888721" id="525054990185189175">
+                                    <node role="argument" roleId="tp2q.1172256416782" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189176">
+                                      <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185189177">
+                                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185189179" resolveInfo="it" />
+                                      </node>
+                                      <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185189178">
+                                        <link role="property" roleId="tpee.1201385237847" targetNodeId="2578114784133105818" resolveInfo="id" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="525054990185189179">
+                            <property name="name" nameId="tpck.1169194664001" value="it" />
+                            <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="525054990185189180" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tp2q.ToListOperation" typeId="tp2q.1151702311717" id="525054990185189181" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="525054990185189118">
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="525054990185189119">
+                <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="525054990185189120">
+                  <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185189121">
+                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185189122">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7676363187707324414" resolveInfo="criteria" />
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185189123">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324606" />
+                    </node>
+                  </node>
+                  <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="525054990185189124">
+                    <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+                  </node>
+                </node>
+              </node>
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="525054990185189125" />
+            </node>
+          </node>
           <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="704531202309220406">
             <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="704531202309220407">
               <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="704531202309220408">
@@ -2651,8 +2903,8 @@
                     </node>
                   </node>
                   <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="704531202309220413">
-                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="7676363187707302744" resolveInfo="Prozent" />
                     <link role="status" roleId="un0u.4533072425307838444" targetNodeId="7676363187707302742" resolveInfo="AbzugWirkung" />
+                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="7676363187707302745" resolveInfo="FixbetragPS" />
                   </node>
                 </node>
               </node>
@@ -2691,6 +2943,40 @@
                     </node>
                   </node>
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="750588699098217865" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185089160">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="525054990185089161">
+              <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185089162">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185089163">
+                  <node role="operand" roleId="tpee.1197027771414" type="un0u.DateLiteral" typeId="un0u.569389511234497391" id="525054990185089164">
+                    <property name="day" nameId="un0u.569389511234497410" value="0" />
+                    <property name="month" nameId="un0u.569389511234497409" value="0" />
+                    <property name="year" nameId="un0u.569389511234497408" value="0" />
+                    <property name="fromServer" nameId="un0u.569389511234497411" value="true" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185089165">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="kpc2.~LocalDate%dwithYear(int)%corg%djoda%dtime%dLocalDate" resolveInfo="withYear" />
+                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="525054990185089166">
+                      <property name="value" nameId="tpee.1068580320021" value="9999" />
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185089167">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="kpc2.~LocalDate%dwithDayOfYear(int)%corg%djoda%dtime%dLocalDate" resolveInfo="withDayOfYear" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="525054990185089168">
+                    <property name="value" nameId="tpee.1068580320021" value="1" />
+                  </node>
+                </node>
+              </node>
+              <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185089169">
+                <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="525054990185089170">
+                  <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="7676363187707316360" resolveInfo="artikelAbzug" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185089171">
+                  <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707302910" resolveInfo="dateValidTo" />
                 </node>
               </node>
             </node>
@@ -2938,6 +3224,221 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="308340049802665383">
                   <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="525054990185341622">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="525054990185341623">
+            <property name="name" nameId="tpck.1169194664001" value="zuordnungen" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="525054990185341624">
+              <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="525054990185341625">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="hqqe.489969188104799428" resolveInfo="LieferantenZuordnung" />
+              </node>
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="525054990185341626">
+              <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="hqqe.489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hqqe.8104064611855128148" resolveInfo="findAllZuordnungen" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185341627">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341628">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341629">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="525054990185341630">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185341623" resolveInfo="zuordnungen" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="525054990185341631">
+                <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="525054990185341632">
+                  <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="525054990185341633">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185341634">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="525054990185341635">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341636">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185341637">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185341644" resolveInfo="itZuordnung" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185341638">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799519" resolveInfo="lieferantKondition" />
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341639">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341640">
+                            <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185341641">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7676363187707324414" resolveInfo="criteria" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185341642">
+                              <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324592" resolveInfo="lieferant" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185341643">
+                            <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="525054990185341644">
+                    <property name="name" nameId="tpck.1169194664001" value="itZuordnung" />
+                    <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="525054990185341645" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="525054990185341646">
+              <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="525054990185341647">
+                <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="525054990185341648">
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="525054990185341649">
+                    <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="525054990185341650">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185341651">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341652">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="525054990185341653">
+                            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185341654">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="525054990185341655">
+                              <property name="value" nameId="tpee.1070475926801" value="Found Zuordnung with ks!" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185341656">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341657">
+                          <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="525054990185341658">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="308340049802651308" resolveInfo="artikelLieferant" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddAllElementsOperation" typeId="tp2q.1160666733551" id="525054990185341659">
+                            <node role="argument" roleId="tp2q.1160666822012" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="525054990185341660">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2987152407130329559" resolveInfo="findAllArtikelZuStandardlieferantAndKs" />
+                              <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="346759792891147930" resolveInfo="ArtikelstammRepo" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341661">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185341662">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185341706" resolveInfo="itZuordnung" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185341663">
+                                  <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799470" resolveInfo="lieferantStandard" />
+                                </node>
+                              </node>
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341664">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185341665">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185341706" resolveInfo="itZuordnung" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185341666">
+                                  <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799477" resolveInfo="lieferantenRabattGrpStd" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="condition" roleId="tpee.1068580123160" type="tpee.AndExpression" typeId="tpee.1080120340718" id="525054990185341667">
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="525054990185341668">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341669">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185341670">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185341706" resolveInfo="itZuordnung" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185341671">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799470" resolveInfo="lieferantStandard" />
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341672">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341673">
+                            <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185341674">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7676363187707324414" resolveInfo="criteria" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185341675">
+                              <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324592" resolveInfo="lieferant" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185341676">
+                            <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="525054990185341677">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341678">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185341679">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185341706" resolveInfo="itZuordnung" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185341680">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799477" resolveInfo="lieferantenRabattGrpStd" />
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="525054990185341681">
+                          <property name="value" nameId="tpee.1068580320021" value="0" />
+                        </node>
+                      </node>
+                    </node>
+                    <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="525054990185341682">
+                      <node role="statementList" roleId="tpee.1206060644605" type="tpee.StatementList" typeId="tpee.1068580123136" id="525054990185341683">
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185341684">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341685">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="525054990185341686">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+                              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185341687">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="525054990185341688">
+                                <property name="value" nameId="tpee.1070475926801" value="Found Zuordnung without ks!" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185341689">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341690">
+                            <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="525054990185341691">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="308340049802651308" resolveInfo="artikelLieferant" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddAllElementsOperation" typeId="tp2q.1160666733551" id="525054990185341692">
+                              <node role="argument" roleId="tp2q.1160666822012" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="525054990185341693">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5176117387240966575" resolveInfo="findAllArtikelZuStandardlieferant" />
+                                <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="346759792891147930" resolveInfo="ArtikelstammRepo" />
+                                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341694">
+                                  <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185341695">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185341706" resolveInfo="itZuordnung" />
+                                  </node>
+                                  <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185341696">
+                                    <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799470" resolveInfo="lieferantStandard" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node role="condition" roleId="tpee.1206060619838" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="525054990185341697">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341698">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185341699">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="525054990185341706" resolveInfo="itZuordnung" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185341700">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799470" resolveInfo="lieferantStandard" />
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341701">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185341702">
+                            <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185341703">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7676363187707324414" resolveInfo="criteria" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185341704">
+                              <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324592" resolveInfo="lieferant" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185341705">
+                            <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="525054990185341706">
+                  <property name="name" nameId="tpck.1169194664001" value="itZuordnung" />
+                  <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="525054990185341707" />
                 </node>
               </node>
             </node>
@@ -3390,6 +3891,45 @@
         <property name="hotkey" nameId="un0u.5725201540142890812" value="SAVE" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="308340049803008052">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="308340049803008053">
+            <node role="statement" roleId="tpee.1068581517665" type="un0u.FlagCommand" typeId="un0u.1881524139085549729" id="525054990184746095">
+              <node role="msgExpression" roleId="un0u.1881524139085549730" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="525054990184746096">
+                <property name="value" nameId="tpee.1070475926801" value="Angabe der Preislinie nur bei Anlage von Transportkosten" />
+              </node>
+              <node role="conditionExpression" roleId="un0u.1881524139085549731" type="tpee.AndExpression" typeId="tpee.1080120340718" id="525054990184794186">
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="525054990184884731">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="525054990184884732">
+                    <node role="expression" roleId="tpee.1079359253376" type="tpee.CastExpression" typeId="tpee.1070534934090" id="525054990184884733">
+                      <node role="expression" roleId="tpee.1070534934092" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990184884734">
+                        <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="525054990184884735">
+                          <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="7676363187707316360" resolveInfo="artikelAbzug" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990184884736">
+                          <link role="property" roleId="tpee.1201385237847" targetNodeId="4483720003146524823" />
+                        </node>
+                      </node>
+                      <node role="type" roleId="tpee.1070534934091" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="525054990184884737">
+                        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="e2lb.~Object" resolveInfo="Object" />
+                      </node>
+                    </node>
+                  </node>
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="525054990184884738" />
+                </node>
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="525054990184794146">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="525054990184794131">
+                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="4483720003146432121" resolveInfo="Transportkosten" />
+                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="7676363187707302720" resolveInfo="AbzugTyp" />
+                  </node>
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990184794164">
+                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="525054990184794149">
+                      <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="7676363187707316360" resolveInfo="artikelAbzug" />
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990184794170">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707302712" resolveInfo="abzugTyp" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node role="statement" roleId="tpee.1068581517665" type="un0u.DoneCommand" typeId="un0u.1881524139085552751" id="308340049803008061" />
           </node>
         </node>
@@ -3633,172 +4173,127 @@
         <property name="text" nameId="un0u.6525155817177697682" value="Löscht die gewählte Abzugsposition" />
       </node>
     </node>
-    <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="704531202307188217">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="704531202307188218">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="704531202307188267">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="704531202307188268">
-            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="704531202307188269">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="704531202307188270">
-                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202307188210" resolveInfo="criteria" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="704531202307188271">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324776" resolveInfo="abzuege" />
-              </node>
-            </node>
-            <node role="operation" roleId="tpee.1197027833540" type="tp2q.RemoveElementOperation" typeId="tp2q.1167380149909" id="704531202307188272">
-              <node role="argument" roleId="tp2q.1167380149910" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="704531202307188273">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="7676363187707316360" resolveInfo="artikelAbzug" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </root>
   <root id="7676363187708125634">
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="704531202308037430">
       <property name="name" nameId="tpck.1169194664001" value="Artikel Auswahl" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="2578114784133105812" resolveInfo="Artikel" />
-      <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="750588699098042240">
-        <property name="name" nameId="tpck.1169194664001" value="Noch nicht verw. Artikel anzeigen" />
-        <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="750588699098042241">
-          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="750588699098042242">
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="750588699098042289">
-              <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="750588699098042290">
-                <property name="name" nameId="tpck.1169194664001" value="artikelInUse" />
-                <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="750588699098042291">
-                  <node role="elementType" roleId="tp2q.1151689745422" type="tpee.IntegerType" typeId="tpee.1070534370425" id="750588699098042293" />
-                </node>
-                <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042295">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042325">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042296">
-                      <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="750588699098042297">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
-                      </node>
-                      <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042298">
-                        <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324776" resolveInfo="abzuege" />
-                      </node>
+      <node role="pageInit" roleId="un0u.1881524139084590808" type="un0u.PageInitConceptFunc" typeId="un0u.6525155817176738379" id="704531202308037431">
+        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="704531202308037432">
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="750588699098042289">
+            <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="750588699098042290">
+              <property name="name" nameId="tpck.1169194664001" value="artikelInUse" />
+              <node role="type" roleId="tpee.5680397130376446158" type="tp2q.SequenceType" typeId="tp2q.1151689724996" id="750588699098042291">
+                <node role="elementType" roleId="tp2q.1151689745422" type="tpee.IntegerType" typeId="tpee.1070534370425" id="750588699098042293" />
+              </node>
+              <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042295">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042325">
+                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042296">
+                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="750588699098042297">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
                     </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="750588699098042330">
-                      <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="750588699098042331">
-                        <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="750588699098042332">
-                          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="750588699098042335">
-                            <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="750588699098042373">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042391">
-                                <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="750588699098042376">
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
-                                </node>
-                                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042396">
-                                  <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324606" />
-                                </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042298">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324776" resolveInfo="abzuege" />
+                    </node>
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="750588699098042330">
+                    <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="750588699098042331">
+                      <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="750588699098042332">
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="750588699098042335">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="750588699098042373">
+                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042391">
+                              <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="750588699098042376">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
                               </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042351">
-                                <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="750588699098042336">
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="750588699098042333" resolveInfo="it" />
-                                </node>
-                                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042357">
-                                  <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707302712" />
-                                </node>
+                              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042396">
+                                <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324606" resolveInfo="typ" />
+                              </node>
+                            </node>
+                            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042351">
+                              <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="750588699098042336">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="750588699098042333" resolveInfo="it" />
+                              </node>
+                              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042357">
+                                <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707302712" resolveInfo="abzugTyp" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="750588699098042333">
-                          <property name="name" nameId="tpck.1169194664001" value="it" />
-                          <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="750588699098042334" />
-                        </node>
+                      </node>
+                      <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="750588699098042333">
+                        <property name="name" nameId="tpck.1169194664001" value="it" />
+                        <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="750588699098042334" />
                       </node>
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.SelectOperation" typeId="tp2q.1202128969694" id="750588699098042299">
-                    <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="750588699098042300">
-                      <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="750588699098042301">
-                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="750588699098042302">
-                          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042303">
-                            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="750588699098042304">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="750588699098042306" resolveInfo="it" />
-                            </node>
-                            <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="750588699098042305">
-                              <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="7676363187707302705" resolveInfo="artikel" />
-                            </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp2q.SelectOperation" typeId="tp2q.1202128969694" id="750588699098042299">
+                  <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="750588699098042300">
+                    <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="750588699098042301">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="750588699098042302">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042303">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="750588699098042304">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="750588699098042306" resolveInfo="it" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="750588699098042305">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="7676363187707302705" resolveInfo="artikel" />
                           </node>
                         </node>
                       </node>
-                      <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="750588699098042306">
-                        <property name="name" nameId="tpck.1169194664001" value="it" />
-                        <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="750588699098042307" />
-                      </node>
+                    </node>
+                    <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="750588699098042306">
+                      <property name="name" nameId="tpck.1169194664001" value="it" />
+                      <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="750588699098042307" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="750588699098042243">
-              <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="750588699098042244">
-                <node role="lValue" roleId="tpee.1068498886295" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="750588699098042245">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037405" resolveInfo="artikelLieferant" />
-                </node>
-                <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042246">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042247">
-                    <node role="operand" roleId="tpee.1197027771414" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="750588699098042248">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5176117387240966575" resolveInfo="findAllArtikelZuStandardlieferant" />
-                      <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="346759792891147930" resolveInfo="ArtikelstammRepo" />
-                      <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042249">
-                        <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042250">
-                          <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="750588699098042251">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
-                          </node>
-                          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042252">
-                            <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324592" resolveInfo="lieferant" />
-                          </node>
-                        </node>
-                        <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042253">
-                          <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
-                        </node>
-                      </node>
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="750588699098042254">
-                      <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="750588699098042255">
-                        <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="750588699098042256">
-                          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="750588699098042257">
-                            <node role="expression" roleId="tpee.1068580123156" type="tpee.NotExpression" typeId="tpee.1081516740877" id="750588699098042258">
-                              <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042259">
-                                <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="750588699098042398">
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="750588699098042290" resolveInfo="artikelInUse" />
-                                </node>
-                                <node role="operation" roleId="tpee.1197027833540" type="tp2q.ContainsOperation" typeId="tp2q.1172254888721" id="750588699098042273">
-                                  <node role="argument" roleId="tp2q.1172256416782" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042274">
-                                    <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="750588699098042275">
-                                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="750588699098042277" resolveInfo="it" />
-                                    </node>
-                                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042276">
-                                      <link role="property" roleId="tpee.1201385237847" targetNodeId="2578114784133105818" resolveInfo="id" />
-                                    </node>
+          </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="750588699098042243">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="750588699098042244">
+              <node role="lValue" roleId="tpee.1068498886295" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="750588699098042245">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037405" resolveInfo="artikelLieferant" />
+              </node>
+              <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042246">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042247">
+                  <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="525054990185311150">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037405" resolveInfo="artikelLieferant" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="750588699098042254">
+                    <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="750588699098042255">
+                      <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="750588699098042256">
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="750588699098042257">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.NotExpression" typeId="tpee.1081516740877" id="750588699098042258">
+                            <node role="expression" roleId="tpee.1081516765348" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042259">
+                              <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="750588699098042398">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="750588699098042290" resolveInfo="artikelInUse" />
+                              </node>
+                              <node role="operation" roleId="tpee.1197027833540" type="tp2q.ContainsOperation" typeId="tp2q.1172254888721" id="750588699098042273">
+                                <node role="argument" roleId="tp2q.1172256416782" type="tpee.DotExpression" typeId="tpee.1197027756228" id="750588699098042274">
+                                  <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="750588699098042275">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="750588699098042277" resolveInfo="it" />
+                                  </node>
+                                  <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="750588699098042276">
+                                    <link role="property" roleId="tpee.1201385237847" targetNodeId="2578114784133105818" resolveInfo="id" />
                                   </node>
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="750588699098042277">
-                          <property name="name" nameId="tpck.1169194664001" value="it" />
-                          <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="750588699098042278" />
-                        </node>
+                      </node>
+                      <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="750588699098042277">
+                        <property name="name" nameId="tpck.1169194664001" value="it" />
+                        <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="750588699098042278" />
                       </node>
                     </node>
                   </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.ToListOperation" typeId="tp2q.1151702311717" id="750588699098042279" />
                 </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp2q.ToListOperation" typeId="tp2q.1151702311717" id="750588699098042279" />
               </node>
             </node>
-            <node role="statement" roleId="tpee.1068581517665" type="un0u.PageCommand" typeId="un0u.1881524139085552758" id="750588699098042400">
-              <link role="page" roleId="un0u.1881524139085552759" targetNodeId="704531202308037430" resolveInfo="Artikel Auswahl" />
-            </node>
           </node>
-        </node>
-      </node>
-      <node role="pageInit" roleId="un0u.1881524139084590808" type="un0u.PageInitConceptFunc" typeId="un0u.6525155817176738379" id="704531202308037431">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="704531202308037432">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="704531202308037433">
             <node role="expression" roleId="tpee.1068580123156" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="704531202308037434">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037405" resolveInfo="artikelLieferant" />
@@ -3975,6 +4470,10 @@
               <link role="page" roleId="un0u.1881524139085552759" targetNodeId="704531202308037629" resolveInfo="Artikel bearbeiten" />
             </node>
           </node>
+        </node>
+        <node role="enabledWhen" roleId="un0u.7158462476985919208" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185128641">
+          <node role="operand" roleId="tpee.1197027771414" type="un0u.GetSelectedObjects" typeId="un0u.7303581843790374021" id="525054990185128626" />
+          <node role="operation" roleId="tpee.1197027833540" type="tp2q.IsNotEmptyOperation" typeId="tp2q.1176501494711" id="525054990185128648" />
         </node>
       </node>
     </node>
@@ -4248,7 +4747,7 @@
                   </node>
                   <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="704531202309220473">
                     <link role="status" roleId="un0u.4533072425307838444" targetNodeId="7676363187707302742" resolveInfo="AbzugWirkung" />
-                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="7676363187707302744" resolveInfo="Prozent" />
+                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="7676363187707302745" resolveInfo="FixbetragPS" />
                   </node>
                 </node>
               </node>
@@ -4287,6 +4786,40 @@
                     </node>
                   </node>
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="750588699098217883" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185058865">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="525054990185058903">
+              <node role="rValue" roleId="tpee.1068498886297" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185058943">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185058921">
+                  <node role="operand" roleId="tpee.1197027771414" type="un0u.DateLiteral" typeId="un0u.569389511234497391" id="525054990185058906">
+                    <property name="day" nameId="un0u.569389511234497410" value="0" />
+                    <property name="month" nameId="un0u.569389511234497409" value="0" />
+                    <property name="year" nameId="un0u.569389511234497408" value="0" />
+                    <property name="fromServer" nameId="un0u.569389511234497411" value="true" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185058927">
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="kpc2.~LocalDate%dwithYear(int)%corg%djoda%dtime%dLocalDate" resolveInfo="withYear" />
+                    <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="525054990185058928">
+                      <property name="value" nameId="tpee.1068580320021" value="9999" />
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185058949">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="kpc2.~LocalDate%dwithDayOfYear(int)%corg%djoda%dtime%dLocalDate" resolveInfo="withDayOfYear" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="525054990185058950">
+                    <property name="value" nameId="tpee.1068580320021" value="1" />
+                  </node>
+                </node>
+              </node>
+              <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185058881">
+                <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="525054990185058866">
+                  <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="7676363187707316360" resolveInfo="artikelAbzug" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185058887">
+                  <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707302910" />
                 </node>
               </node>
             </node>
@@ -4415,6 +4948,64 @@
               </node>
             </node>
           </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185028526">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185028565">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185028542">
+                <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="525054990185028527">
+                  <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="7676363187707316360" resolveInfo="artikelAbzug" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="un0u.BPMetaReference" typeId="un0u.1410680821326658964" id="525054990185028549">
+                  <link role="businessProperty" roleId="un0u.1410680821326658966" targetNodeId="4483720003146524823" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185028570">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="28jr.3614537725517410479" resolveInfo="setEnabled" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="525054990185028608">
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="525054990185028611">
+                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="7676363187707302720" resolveInfo="AbzugTyp" />
+                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="4483720003146432121" resolveInfo="Transportkosten" />
+                  </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185028586">
+                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185028571">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185028592">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324606" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185028613">
+            <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185028652">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185028629">
+                <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="525054990185028614">
+                  <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="7676363187707316360" resolveInfo="artikelAbzug" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="un0u.BPMetaReference" typeId="un0u.1410680821326658964" id="525054990185028636">
+                  <link role="businessProperty" roleId="un0u.1410680821326658966" targetNodeId="4483720003146524823" />
+                </node>
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185028658">
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="28jr.3614537725517403693" resolveInfo="setOptional" />
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="525054990185028665">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185028666">
+                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185028667">
+                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185028668">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324606" />
+                    </node>
+                  </node>
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="525054990185028669">
+                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="7676363187707302720" resolveInfo="AbzugTyp" />
+                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="4483720003146432121" resolveInfo="Transportkosten" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -4466,6 +5057,221 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="704531202308037426">
                   <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="5141888444944004206">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="5141888444944004207">
+            <property name="name" nameId="tpck.1169194664001" value="zuordnungen" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="5141888444944004208">
+              <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5141888444944004432">
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="hqqe.489969188104799428" resolveInfo="LieferantenZuordnung" />
+              </node>
+            </node>
+            <node role="initializer" roleId="tpee.1068431790190" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="5141888444944004210">
+              <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="hqqe.489969188104799549" resolveInfo="LieferantenZuordnungRepo" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="hqqe.8104064611855128148" resolveInfo="findAllZuordnungen" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5141888444944004211">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5141888444944004212">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5141888444944004213">
+              <node role="operand" roleId="tpee.1197027771414" type="tpee.LocalVariableReference" typeId="tpee.1068581242866" id="5141888444944004214">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5141888444944004207" resolveInfo="zuordnungen" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="5141888444944004215">
+                <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="5141888444944004216">
+                  <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="5141888444944004217">
+                    <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5141888444944004218">
+                      <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5141888444944004219">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5141888444944004221">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5141888444944004222">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5141888444944004224" resolveInfo="itZuordnung" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="5141888444944041942">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799519" resolveInfo="lieferantKondition" />
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5141888444944004424">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5141888444944004425">
+                            <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185219530">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185219533">
+                              <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324592" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5141888444944004428">
+                            <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="5141888444944004224">
+                    <property name="name" nameId="tpck.1169194664001" value="itZuordnung" />
+                    <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="5141888444944004225" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="5141888444944004226">
+              <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="5141888444944004227">
+                <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="5141888444944004228">
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="5141888444944004229">
+                    <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="5141888444944004230">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185250133">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185250149">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="525054990185250134">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+                            <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185250154">
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
+                            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="525054990185250155">
+                              <property name="value" nameId="tpee.1070475926801" value="Found Zuordnung with ks!" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185219539">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185219555">
+                          <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="525054990185219540">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037405" resolveInfo="artikelLieferant" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddAllElementsOperation" typeId="tp2q.1160666733551" id="525054990185219561">
+                            <node role="argument" roleId="tp2q.1160666822012" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="525054990185219563">
+                              <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="346759792891147930" resolveInfo="ArtikelstammRepo" />
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2987152407130329559" resolveInfo="findAllArtikelZuStandardlieferantAndKs" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185219564">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185219565">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5141888444944004311" resolveInfo="itZuordnung" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185219566">
+                                  <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799470" resolveInfo="lieferantStandard" />
+                                </node>
+                              </node>
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185219567">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185219568">
+                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5141888444944004311" resolveInfo="itZuordnung" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185219569">
+                                  <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799477" resolveInfo="lieferantenRabattGrpStd" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="condition" roleId="tpee.1068580123160" type="tpee.AndExpression" typeId="tpee.1080120340718" id="5941276988966006376">
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="5941276988966006456">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5941276988966006414">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5941276988966006379">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5141888444944004311" resolveInfo="itZuordnung" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="4442777440661458452">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799470" resolveInfo="lieferantStandard" />
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5941276988966006459">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5941276988966006460">
+                            <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185219534">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185219537">
+                              <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324592" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5941276988966006463">
+                            <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
+                          </node>
+                        </node>
+                      </node>
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="5141888444944004276">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5141888444944004277">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5141888444944004278">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5141888444944004311" resolveInfo="itZuordnung" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="5141888444944041788">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799477" resolveInfo="lieferantenRabattGrpStd" />
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5141888444944004280">
+                          <property name="value" nameId="tpee.1068580320021" value="0" />
+                        </node>
+                      </node>
+                    </node>
+                    <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="4442777440661459184">
+                      <node role="statementList" roleId="tpee.1206060644605" type="tpee.StatementList" typeId="tpee.1068580123136" id="4442777440661459186">
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185280649">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185280650">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="525054990185280651">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="e2lb.~System%dout" resolveInfo="out" />
+                              <link role="classifier" roleId="tpee.1144433057691" targetNodeId="e2lb.~System" resolveInfo="System" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="525054990185280652">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="fxg7.~PrintStream%dprintln(java%dlang%dString)%cvoid" resolveInfo="println" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="525054990185280653">
+                                <property name="value" nameId="tpee.1070475926801" value="Found Zuordnung without ks!" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="525054990185219580">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185219613">
+                            <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="525054990185219581">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037405" resolveInfo="artikelLieferant" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tp2q.AddAllElementsOperation" typeId="tp2q.1160666733551" id="525054990185219619">
+                              <node role="argument" roleId="tp2q.1160666822012" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="525054990185219622">
+                                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="5176117387240966575" resolveInfo="findAllArtikelZuStandardlieferant" />
+                                <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="346759792891147930" resolveInfo="ArtikelstammRepo" />
+                                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990185219623">
+                                  <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="525054990185219624">
+                                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5141888444944004311" resolveInfo="itZuordnung" />
+                                  </node>
+                                  <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="525054990185219625">
+                                    <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799470" resolveInfo="lieferantStandard" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node role="condition" roleId="tpee.1206060619838" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="4442777440661459119">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4442777440661459120">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="4442777440661459121">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5141888444944004311" resolveInfo="itZuordnung" />
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="un0u.BPRefIdReference" typeId="un0u.7270431012770461291" id="4442777440661459122">
+                            <link role="businessProperty" roleId="un0u.7270431012770461292" targetNodeId="hqqe.489969188104799470" resolveInfo="lieferantStandard" />
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4442777440661459123">
+                          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4442777440661459124">
+                            <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990185219575">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990185219578">
+                              <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324592" />
+                            </node>
+                          </node>
+                          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="4442777440661459127">
+                            <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151127" resolveInfo="id" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="5141888444944004311">
+                  <property name="name" nameId="tpck.1169194664001" value="itZuordnung" />
+                  <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="5141888444944004312" />
                 </node>
               </node>
             </node>
@@ -4557,6 +5363,17 @@
             <property name="name" nameId="tpck.1169194664001" value="it" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="704531202308040611" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node role="enabledWhen" roleId="un0u.6525155817177860576" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="525054990184646133">
+      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="525054990184646136" />
+      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="525054990184646111">
+        <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="525054990184646096">
+          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="704531202308037401" resolveInfo="criteria" />
+        </node>
+        <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="525054990184646117">
+          <link role="property" roleId="tpee.1201385237847" targetNodeId="7676363187707324606" />
         </node>
       </node>
     </node>

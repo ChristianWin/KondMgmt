@@ -68,7 +68,7 @@
       <property name="styles" nameId="sgb.1472214787654144378" value="/org/modellwerkstatt/forms/PreInputDelegates/styles.json" />
       <property name="name" nameId="tpck.1169194664001" value="KonditionsmanagementUI" />
       <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Konditionsmanagementsoftware V1.4" />
-      <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998490" resolveInfo="BasisConfigurationTest" />
+      <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998487" resolveInfo="BasisConfiguration" />
     </node>
     <node type="un0u.TestCases" typeId="un0u.3262649880240512242" id="7571418271465252847">
       <property name="name" nameId="tpck.1169194664001" value="testAppendString" />

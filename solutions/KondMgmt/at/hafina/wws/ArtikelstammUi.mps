@@ -222,13 +222,13 @@
           </node>
         </node>
       </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="750588699098249102">
+      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="6922158259141522071">
         <property name="width" nameId="sgb.8089681376575535775" value="100" />
         <property name="label" nameId="sgb.8089681376575535776" value="Artikel Id" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="750588699098249104">
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0" />
+        <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="6922158259141522073">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="46c4.7676363187707302705" />
-          <node role="path" roleId="sgb.8089681376575669706" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="750588699098249121">
+          <node role="path" roleId="sgb.8089681376575669706" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="6922158259141522810">
             <link role="property" roleId="sgb.8089681376575669705" targetNodeId="46c4.2578114784133105818" />
           </node>
         </node>
@@ -282,6 +282,14 @@
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="308340049801684292">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="46c4.7676363187707302910" />
+        </node>
+      </node>
+      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4483720003146524939">
+        <property name="width" nameId="sgb.8089681376575535775" value="100" />
+        <property name="label" nameId="sgb.8089681376575535776" value="Preislinie" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
+        <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="4483720003146524941">
+          <link role="property" roleId="sgb.8089681376575669705" targetNodeId="46c4.4483720003146524823" />
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="704531202309097864">
@@ -593,6 +601,28 @@
           </node>
         </node>
       </node>
+      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="4483720003146524929">
+        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
+        <property name="name" nameId="tpck.1169194664001" value="preisLinie" />
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4483720003146524930">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="4483720003146524932">
+            <link role="property" roleId="sgb.8089681376575669705" targetNodeId="46c4.4483720003146524823" resolveInfo="preisLinie" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4483720003146524933">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4483720003146524935">
+            <property name="value" nameId="tpee.1070475926801" value="Preislinie" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4483720003146524936">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017419" resolveInfo="setOptional" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4483720003146524938">
+            <property name="value" nameId="tpee.1068580123138" value="true" />
+          </node>
+        </node>
+      </node>
       <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="704531202309097851">
         <property name="name" nameId="tpck.1169194664001" value="beschreibung" />
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="704531202309097855">
@@ -604,7 +634,7 @@
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="704531202309097858">
           <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
           <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="704531202309097860">
-            <property name="value" nameId="tpee.1070475926801" value="Beschreibung" />
+            <property name="value" nameId="tpee.1070475926801" value="Beschreibung/Anmerkung" />
           </node>
         </node>
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="704531202309097861">
@@ -642,6 +672,14 @@
       <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
       <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="ArtikelAuswahlTF" />
+      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="525054990184914901">
+        <property name="width" nameId="sgb.8089681376575535775" value="100" />
+        <property name="label" nameId="sgb.8089681376575535776" value="Artikel Id" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0" />
+        <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="525054990184914903">
+          <link role="property" roleId="sgb.8089681376575669705" targetNodeId="46c4.2578114784133105818" />
+        </node>
+      </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="704531202308046213">
         <property name="width" nameId="sgb.8089681376575535775" value="500" />
         <property name="label" nameId="sgb.8089681376575535776" value="Artikel" />
