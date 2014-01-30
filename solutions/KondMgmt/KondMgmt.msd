@@ -5,6 +5,7 @@
   </models>
   <sourcePath />
   <dependencies>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">0154f11d-a7f0-4ecd-b507-776dfe8dc0de(at.hafina.KondMgmt)</dependency>
     <dependency reexport="false">fba399db-f591-45dc-a279-e2a2a986e262(jetbrains.mps.build.generictasks)</dependency>
     <dependency reexport="false">1e645434-f066-4246-95c3-c768bd8f6bee(org.modellwerkstatt.FopLand)</dependency>

@@ -19,6 +19,7 @@
   <import index="hqqe" modelUID="r:a21d359e-b425-4f5f-af67-8aa3c0a353f4(at.hafina.wws.LieferantenZuordnung)" version="-1" />
   <import index="mma5" modelUID="r:bd45a0c2-84a2-4253-86a2-c9c160a8121d(org.modellwerkstatt.forms.FormsRT)" version="1" />
   <import index="8z9b" modelUID="r:90ef3146-e171-4eff-aee5-122e613b5ee8(at.hafina.wws.KonditionsTypenVerwaltung)" version="-1" />
+  <import index="j9pa" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.text(JDK/java.text@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
@@ -215,6 +216,11 @@
       <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
       <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
       <property name="name" nameId="tpck.1169194664001" value="WeitereMaVertragFC" />
+    </node>
+    <node type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="5025864127053520379">
+      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
+      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="EditAlternativeKonditionszeileFC" />
     </node>
   </roots>
   <root id="4235813073708260020">
@@ -2270,6 +2276,14 @@
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="4235813073708261101">
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133136073" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="852837604471831513">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Summensatz" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="852837604472995525">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.852837604472721587" />
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4235813073708261102">
@@ -6777,6 +6791,71 @@
       <property name="name" nameId="tpck.1169194664001" value="AnforderungenListeTF" />
       <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.9143642913023234602" resolveInfo="forderungen" />
       <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.9143642913023226926" resolveInfo="SelectAnforderungViewCriteria" />
+      <node role="advancedSelection" roleId="sgb.8584027565661509824" type="sgb.SetStatusSelection" typeId="sgb.7192042020160957474" id="5386099412292276397">
+        <node role="expression" roleId="sgb.1677604749516705202" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5386099412292391984">
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5386099412292391990">
+            <property name="value" nameId="tpee.1070475926801" value="Netto-Summe Selektion: " />
+          </node>
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5386099412292276629">
+            <node role="operand" roleId="tpee.1197027771414" type="tpee.StaticMethodCall" typeId="tpee.1081236700937" id="2578114784133136148">
+              <link role="classConcept" roleId="tpee.1144433194310" targetNodeId="j9pa.~DecimalFormat" resolveInfo="DecimalFormat" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="j9pa.~NumberFormat%dgetNumberInstance()%cjava%dtext%dNumberFormat" resolveInfo="getNumberInstance" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5386099412292276635">
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="j9pa.~Format%dformat(java%dlang%dObject)%cjava%dlang%dString" resolveInfo="format" />
+              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5386099412292276709">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5386099412292276653">
+                  <node role="operand" roleId="tpee.1197027771414" type="sgb.SelectedTableObjects" typeId="sgb.7192042020160957485" id="5386099412292276636" />
+                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.SelectOperation" typeId="tp2q.1202128969694" id="5386099412292276662">
+                    <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="5386099412292276663">
+                      <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="5386099412292276664">
+                        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5386099412292276668">
+                          <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5386099412292276684">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5386099412292276669">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5386099412292276665" resolveInfo="it" />
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5386099412292276692">
+                              <link role="property" roleId="tpee.1201385237847" targetNodeId="1v76.2578114784133108701" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="5386099412292276665">
+                        <property name="name" nameId="tpck.1169194664001" value="it" />
+                        <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="5386099412292276666" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tp2q.ReduceLeftOperation" typeId="tp2q.1522217801069359738" id="5386099412292276718">
+                  <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="5386099412292276719">
+                    <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="5386099412292276720">
+                      <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5386099412292276726">
+                        <node role="expression" roleId="tpee.1068580123156" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5386099412292276743">
+                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5386099412292276746">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5386099412292276723" resolveInfo="b" />
+                          </node>
+                          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5386099412292276727">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5386099412292276721" resolveInfo="a" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="5386099412292276721">
+                      <property name="name" nameId="tpck.1169194664001" value="a" />
+                      <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="5386099412292276722" />
+                    </node>
+                    <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="5386099412292276723">
+                      <property name="name" nameId="tpck.1169194664001" value="b" />
+                      <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="5386099412292276724" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="5378941860657653640">
         <property name="title" nameId="sgb.7968457660428854083" value="Aktionen" />
         <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="5378941860657653641">
@@ -6935,11 +7014,11 @@
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5378941860657653687">
-        <property name="width" nameId="sgb.8089681376575535775" value="120" />
-        <property name="label" nameId="sgb.8089681376575535776" value="In KMSW verbucht" />
+        <property name="width" nameId="sgb.8089681376575535775" value="100" />
+        <property name="label" nameId="sgb.8089681376575535776" value="Status" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5378941860657653688">
-          <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133108521" resolveInfo="isVerbucht" />
+        <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5386099412291744778">
+          <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133108528" />
         </node>
       </node>
       <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="5378941860657653689">
@@ -7303,6 +7382,28 @@
         <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4642584926044343086">
           <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
           <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="4642584926044343088">
+            <property name="value" nameId="tpee.1068580123138" value="false" />
+          </node>
+        </node>
+      </node>
+      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5386099412291859630">
+        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
+        <property name="name" nameId="tpck.1169194664001" value="status" />
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5386099412291859631">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5386099412291859633">
+            <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133108528" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5386099412291859634">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5386099412291859636">
+            <property name="value" nameId="tpee.1070475926801" value="Übernahmestatus" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5386099412291859637">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5386099412291859639">
             <property name="value" nameId="tpee.1068580123138" value="false" />
           </node>
         </node>
@@ -9055,6 +9156,14 @@
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133140266" resolveInfo="getAktuelleForderungsSumme" />
               </node>
             </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="8757269665090320024">
+              <property name="width" nameId="sgb.8089681376575535775" value="120" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Letzte Berechnung" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="8757269665090320026">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.8757269665089302126" />
+              </node>
+            </node>
             <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="4642584926047856977">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4642584926047856978">
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133140124" resolveInfo="UmsatzForKondition" />
@@ -9190,6 +9299,14 @@
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133136073" />
               </node>
             </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="852837604471946345">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Summensatz" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="852837604472995534">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.852837604472721587" />
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505766">
               <property name="width" nameId="sgb.8089681376575535775" value="100" />
               <property name="label" nameId="sgb.8089681376575535776" value="Konditionssatz" />
@@ -9269,6 +9386,23 @@
             <property name="name" nameId="tpck.1169194664001" value="JvbDetailGd2TF" />
             <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.2578114784133131232" resolveInfo="Kondition" />
             <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="1v76.2578114784133134426" resolveInfo="konditionsZeilen" />
+            <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="5025864127053520699">
+              <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
+              <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="5025864127053520700">
+                <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+                <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.5025864127053520322" resolveInfo="Alternative Staffel editieren" />
+                <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="5025864127053520703">
+                  <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
+                </node>
+                <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="5025864127053520712">
+                  <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133131189" resolveInfo="KonditionsZeile" />
+                </node>
+                <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="5025864127053520701">
+                  <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.5025864127053520347" resolveInfo="Konditionszeile" />
+                  <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="5025864127053520379" resolveInfo="EditAlternativeKonditionszeileFC" />
+                </node>
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505802">
               <property name="width" nameId="sgb.8089681376575535775" value="100" />
               <property name="label" nameId="sgb.8089681376575535776" value="Von" />
@@ -9283,6 +9417,22 @@
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="1329879884013964222">
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.1329879884013956838" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5025864127053520713">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Von (alt.)" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5025864127053520715">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5025864127053520513" resolveInfo="vonAltNullable" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5025864127053520716">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Bis (alt.)" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5025864127053520718">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5025864127053520559" />
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505806">
@@ -10209,7 +10359,7 @@
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4493638243050393316">
         <property name="width" nameId="sgb.8089681376575535775" value="0" />
         <property name="label" nameId="sgb.8089681376575535776" value="Id" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="4493638243051484131">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.4493638243050388003" />
         </node>
@@ -10274,7 +10424,7 @@
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="8991522860713299562">
         <property name="width" nameId="sgb.8089681376575535775" value="100" />
         <property name="label" nameId="sgb.8089681376575535776" value="Id" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="8991522860713299568">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133122666" />
         </node>
@@ -10350,7 +10500,7 @@
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4625314885898252127">
         <property name="width" nameId="sgb.8089681376575535775" value="100" />
         <property name="label" nameId="sgb.8089681376575535776" value="Personalnummer" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="0" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="4625314885898252129">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="o9h8.2578114784133151267" />
         </node>
@@ -10375,6 +10525,88 @@
       <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4625314885898252125">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="o9h8.2578114784133151242" resolveInfo="Mitarbeiter" />
       </node>
+    </node>
+  </root>
+  <root id="5025864127053520379">
+    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="5025864127053520387">
+      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
+      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
+      <property name="name" nameId="tpck.1169194664001" value="EditAlternativeKonditionszeileDF" />
+      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="1v76.2578114784133131189" resolveInfo="KonditionsZeile" />
+      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5025864127053520388">
+        <property name="name" nameId="tpck.1169194664001" value="from" />
+        <property name="delegateType" nameId="sgb.5005516259701333684" value="DecimalDelegate" />
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5025864127053520389">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5025864127053520696">
+            <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5025864127053520513" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5025864127053520391">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025864127053520392">
+            <property name="value" nameId="tpee.1070475926801" value="von Wert" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5025864127053520393">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017419" resolveInfo="setOptional" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5025864127053520394">
+            <property name="value" nameId="tpee.1068580123138" value="true" />
+          </node>
+        </node>
+      </node>
+      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5025864127053520395">
+        <property name="name" nameId="tpck.1169194664001" value="to" />
+        <property name="delegateType" nameId="sgb.5005516259701333684" value="DecimalDelegate" />
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5025864127053520396">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5025864127053520697">
+            <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5025864127053520559" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5025864127053520398">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025864127053520399">
+            <property name="value" nameId="tpee.1070475926801" value="bis Wert" />
+          </node>
+        </node>
+        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5025864127053520400">
+          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017419" resolveInfo="setOptional" />
+          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5025864127053520401">
+            <property name="value" nameId="tpee.1068580123138" value="true" />
+          </node>
+        </node>
+      </node>
+      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5025864127053520419">
+        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025864127053520420">
+          <property name="value" nameId="tpee.1070475926801" value="1*" />
+        </node>
+        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025864127053520421">
+          <property name="value" nameId="tpee.1070475926801" value="1*" />
+        </node>
+        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025864127053520422">
+          <property name="value" nameId="tpee.1070475926801" value="1*" />
+        </node>
+      </node>
+      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5025864127053520423">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133131189" resolveInfo="KonditionsZeile" />
+      </node>
+      <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025864127053520424">
+        <property name="value" nameId="tpee.1070475926801" value="Editor Konditionszeile" />
+      </node>
+    </node>
+    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5025864127053520381">
+      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025864127053520385">
+        <property name="value" nameId="tpee.1070475926801" value="1*" />
+      </node>
+    </node>
+    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5025864127053520382">
+      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5025864127053520386">
+        <property name="value" nameId="tpee.1070475926801" value="1*" />
+      </node>
+    </node>
+    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5025864127053520384">
+      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133131189" resolveInfo="KonditionsZeile" />
     </node>
   </root>
 </model>
