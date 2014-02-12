@@ -2399,35 +2399,51 @@
       </node>
     </node>
     <node role="method" roleId="tpee.1107880067339" type="un0u.ModelRepositoryMethod" typeId="un0u.8009046666043401704" id="5176117387240943379">
-      <property name="name" nameId="tpck.1169194664001" value="findAllForderungsSubTypenToTyp" />
+      <property name="name" nameId="tpck.1169194664001" value="findForderungsSubTypToId" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5176117387240943380" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5176117387240943381">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5176117387240943387">
           <node role="expression" roleId="tpee.1068580123156" type="r5tz.QueryFromMap" typeId="r5tz.774207833082573402" id="5176117387240943388">
             <property name="readOnly" nameId="r5tz.3572493221071471725" value="true" />
             <link role="entityMapping" roleId="r5tz.8172309840348950203" targetNodeId="3687014260077332820" resolveInfo="MapForderungsSubTyp" />
-            <node role="queryOperation" roleId="r5tz.774207833082779687" type="r5tz.WhereQuery" typeId="r5tz.774207833082734171" id="5176117387240943390">
-              <node role="filter" roleId="r5tz.774207833082734172" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5176117387240943395">
-                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="5176117387240943399">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5176117387240943385" resolveInfo="idTyp" />
-                </node>
-                <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="5176117387240943392">
-                  <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="5176117387240943388" />
-                  <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="3687014260077332829" />
-                </node>
+            <node role="queryOperation" roleId="r5tz.774207833082779687" type="r5tz.GetQuery" typeId="r5tz.6435836305144935126" id="6954739765073064887">
+              <node role="argument" roleId="r5tz.6435836305144935143" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6954739765073064889">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5176117387240943385" resolveInfo="idSubTyp" />
               </node>
             </node>
           </node>
         </node>
       </node>
-      <node role="returnType" roleId="tpee.1068580123133" type="tp2q.ListType" typeId="tp2q.1151688443754" id="5176117387240943382">
-        <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5176117387240943384">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133106921" resolveInfo="ForderungsSubTyp" />
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5176117387240943385">
+        <property name="name" nameId="tpck.1169194664001" value="idSubTyp" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5176117387240943386" />
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6954739765073064885">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133106921" resolveInfo="ForderungsSubTyp" />
+      </node>
+    </node>
+    <node role="method" roleId="tpee.1107880067339" type="un0u.ModelRepositoryMethod" typeId="un0u.8009046666043401704" id="6954739765073064891">
+      <property name="name" nameId="tpck.1169194664001" value="findForderungsTypToId" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="6954739765073064892" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="6954739765073064893">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6954739765073064894">
+          <node role="expression" roleId="tpee.1068580123156" type="r5tz.QueryFromMap" typeId="r5tz.774207833082573402" id="6954739765073064895">
+            <property name="readOnly" nameId="r5tz.3572493221071471725" value="true" />
+            <link role="entityMapping" roleId="r5tz.8172309840348950203" targetNodeId="3687014260077332850" resolveInfo="MapForderungsTyp" />
+            <node role="queryOperation" roleId="r5tz.774207833082779687" type="r5tz.GetQuery" typeId="r5tz.6435836305144935126" id="6954739765073064896">
+              <node role="argument" roleId="r5tz.6435836305144935143" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="6954739765073064897">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6954739765073064898" resolveInfo="idTyp" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
-      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5176117387240943385">
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="6954739765073064898">
         <property name="name" nameId="tpck.1169194664001" value="idTyp" />
-        <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5176117387240943386" />
+        <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="6954739765073064899" />
+      </node>
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6954739765073064902">
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133107008" resolveInfo="ForderungsTyp" />
       </node>
     </node>
     <node role="method" roleId="tpee.1107880067339" type="un0u.ModelRepositoryMethod" typeId="un0u.8009046666043401704" id="4257137775275841602">

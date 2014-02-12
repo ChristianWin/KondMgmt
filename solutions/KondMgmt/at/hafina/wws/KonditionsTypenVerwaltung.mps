@@ -3412,7 +3412,7 @@
         <property name="value" nameId="un0u.4533072425307715682" value="EUREH" />
         <property name="name" nameId="tpck.1169194664001" value="EuroProLogEH" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Betrag/Eh" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Eurobetrag pro Einheit" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Euro pro Einheit" />
       </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415667988">
         <property name="name" nameId="tpck.1169194664001" value="LogEHProLogEH" />
