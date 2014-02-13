@@ -7,7 +7,6 @@
   <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language-engaged-on-generation namespace="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
-  <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="108" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
@@ -378,7 +377,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapMitarbeiter" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151242" resolveInfo="Mitarbeiter" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332582">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332583">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151248" />
@@ -480,7 +479,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapAppManager" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2078185796870049952" resolveInfo="MitarbeiterAppRechte" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2078185796870051297">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="2078185796870051300">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="4943983682752418081" />

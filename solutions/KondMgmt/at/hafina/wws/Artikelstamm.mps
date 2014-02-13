@@ -11,7 +11,6 @@
   <import index="epq1" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" version="-1" />
   <import index="kpc2" modelUID="f:java_stub#ea0a61ee-f622-4ba3-98cb-da85ddcdead1#org.joda.time(objectflow#271985905034872643/org.joda.time@java_stub)" version="-1" />
   <import index="d5a5" modelUID="f:java_stub#ea0a61ee-f622-4ba3-98cb-da85ddcdead1#org.joda.time.base(objectflow#271985905034872643/org.joda.time.base@java_stub)" version="-1" />
-  <import index="mma5" modelUID="r:bd45a0c2-84a2-4253-86a2-c9c160a8121d(org.modellwerkstatt.forms.FormsRT)" version="1" />
   <import index="hqqe" modelUID="r:a21d359e-b425-4f5f-af67-8aa3c0a353f4(at.hafina.wws.LieferantenZuordnung)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="108" implicit="yes" />
@@ -785,7 +784,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapArtikelstamm" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133105812" resolveInfo="Artikel" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332614">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.artikelstamm@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.artikelstamm" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332615">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133105818" />
@@ -859,7 +858,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapLieferantenrabattgruppe" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106194" resolveInfo="Lieferantenrabattgruppe" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332640">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_lief_rab_grp@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_lief_rab_grp" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332641">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106200" />
@@ -902,7 +901,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapSteuerKennZeichen" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106238" resolveInfo="Steuerkennzeichen" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332657">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.STA_STEUER@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.STA_STEUER" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332658">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106295" />
