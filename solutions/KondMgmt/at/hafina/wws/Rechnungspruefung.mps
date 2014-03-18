@@ -275,7 +275,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapRechnung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315383" resolveInfo="Rechnung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332927">
-        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332928">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315384" />
@@ -442,7 +442,7 @@
         </node>
       </node>
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5431775171647312561">
-        <property name="value" nameId="tpee.1070475926801" value="REKO_REKOAKT" />
+        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT" />
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.OptimisticOption" typeId="r5tz.774207833082448725" id="5431775171647312564" />
     </node>

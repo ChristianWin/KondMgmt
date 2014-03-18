@@ -23,15 +23,25 @@
     <node type="sgb.Application" typeId="sgb.1472214787652375087" id="3989037348208998718">
       <property name="styles" nameId="sgb.1472214787654144378" value="/org/modellwerkstatt/forms/PreInputDelegates/styles.json" />
       <property name="name" nameId="tpck.1169194664001" value="UmbauNeubauTankstelleApp" />
-      <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Filialenmanagement V1.0" />
+      <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Filialenmanagement für Neueröffnungen V1.0" />
       <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998726" resolveInfo="BasisConfigurationUNT" />
     </node>
     <node type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3989037348208998726">
       <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
-      <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//lola:1521/LOLA" />
-      <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
+      <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//wws:1521/wws" />
       <property name="maxPoolSize" nameId="un0u.3517052249650441955" value="1" />
       <property name="name" nameId="tpck.1169194664001" value="BasisConfigurationUNT" />
+      <property name="username" nameId="un0u.8537348545916385360" value="KMSW" />
+      <property name="password" nameId="un0u.8537348545916385361" value="KMSW" />
+      <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
+      <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
+    </node>
+    <node type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3955449600776371260">
+      <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
+      <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//lola:1521/LOLA" />
+      <property name="jmxuri" nameId="un0u.8603748575145006884" value=" service:jmx:rmi://localhost/jndi/rmi://localhost:1099/???" />
+      <property name="maxPoolSize" nameId="un0u.3517052249650441955" value="1" />
+      <property name="name" nameId="tpck.1169194664001" value="BasisConfigurationUntTest" />
       <property name="username" nameId="un0u.8537348545916385360" value="KMSW" />
       <property name="password" nameId="un0u.8537348545916385361" value="lola" />
       <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
@@ -285,8 +295,9 @@
       </node>
     </node>
   </root>
-  <root id="3989037348208998726">
-    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="4257137775275777188">
+  <root id="3989037348208998726" />
+  <root id="3955449600776371260">
+    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="3955449600776371261">
       <property name="packageName" nameId="un0u.830334255848344170" value="net.ttddyy" />
       <property name="logLevel" nameId="un0u.830334255848344171" value="TRACE" />
     </node>

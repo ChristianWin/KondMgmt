@@ -1900,6 +1900,36 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3212483326812216402">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3212483326812216441">
+            <node role="rValue" roleId="tpee.1068498886297" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="3212483326812216444">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3379512053368454173" resolveInfo="allBglEinheiten" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3212483326812216418">
+              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="3212483326812216403">
+                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="2075539057415667128" resolveInfo="konditionsTyp" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3212483326812216425">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="2987152407126920837" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3212483326812216446">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3212483326812216484">
+            <node role="rValue" roleId="tpee.1068498886297" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="3212483326812216487">
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3379512053368454176" resolveInfo="allZeilenEinheiten" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3212483326812216462">
+              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="3212483326812216447">
+                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="2075539057415667128" resolveInfo="konditionsTyp" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3212483326812216468">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="2987152407126920848" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node role="finalSelection" roleId="un0u.7763613441682561369" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2075539057415667617">

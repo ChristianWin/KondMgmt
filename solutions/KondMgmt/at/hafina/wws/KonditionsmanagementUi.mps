@@ -4693,7 +4693,7 @@
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3871999453605190031">
-        <property name="width" nameId="sgb.8089681376575535775" value="140" />
+        <property name="width" nameId="sgb.8089681376575535775" value="200" />
         <property name="label" nameId="sgb.8089681376575535776" value="E-Mail" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3871999453605190032">
@@ -5466,10 +5466,26 @@
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208839992">
         <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="Umsatz" />
+        <property name="label" nameId="sgb.8089681376575535776" value="Umsatz Proforma" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3966344537750455567">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750422113" />
+        </node>
+      </node>
+      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563069746834">
+        <property name="width" nameId="sgb.8089681376575535775" value="100" />
+        <property name="label" nameId="sgb.8089681376575535776" value="Nettoabzug" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+        <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563069746836">
+          <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563069746794" />
+        </node>
+      </node>
+      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563069746837">
+        <property name="width" nameId="sgb.8089681376575535775" value="100" />
+        <property name="label" nameId="sgb.8089681376575535776" value="Nettoumsatz" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+        <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563069746839">
+          <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563069741290" />
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208839994">
@@ -5477,7 +5493,7 @@
         <property name="label" nameId="sgb.8089681376575535776" value="Umsatz +/-" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3966344537750455568">
-          <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750422120" />
+          <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750422120" resolveInfo="pm" />
         </node>
       </node>
       <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3989037348208839996">
@@ -5581,10 +5597,26 @@
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840009">
               <property name="width" nameId="sgb.8089681376575535775" value="100" />
-              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz Proforma" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3966344537750455316">
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750422428" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563069741250">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoabzug" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563069746181">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563069746096" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563069741252">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoumsatz" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563069746182">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563069746110" />
               </node>
             </node>
             <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3989037348208840011">
@@ -5716,19 +5748,35 @@
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840032">
-              <property name="width" nameId="sgb.8089681376575535775" value="90" />
-              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz in Eur" />
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz Proforma" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3966344537750455263">
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750421232" />
               </node>
             </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="8935576593761972716">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoabzug" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="8935576593761972718">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.8935576593761971645" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="8935576593762429567">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoumsatz" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="8935576593762429648">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.8935576593762429575" />
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840034">
-              <property name="width" nameId="sgb.8089681376575535775" value="90" />
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
               <property name="label" nameId="sgb.8089681376575535776" value="Umsatz +/-" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3966344537750455264">
-                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750421239" />
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750421239" resolveInfo="pm" />
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840036">
@@ -5876,11 +5924,27 @@
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840061">
-              <property name="width" nameId="sgb.8089681376575535775" value="90" />
-              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz in Eur" />
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz Proforma" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3989037348208840062">
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133144198" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563067598103">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoabzug" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563067598106">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563067597495" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563067598107">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoumsatz" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563067598218">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563067598128" />
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840063">
@@ -6052,10 +6116,26 @@
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840096">
               <property name="width" nameId="sgb.8089681376575535775" value="100" />
-              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz Proforma" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3966344537750455571">
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750422554" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563069746682">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoabzug" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563069746684">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563069746524" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563069746685">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoumsatz" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563069746687">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563069746632" />
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840098">
@@ -6063,7 +6143,7 @@
               <property name="label" nameId="sgb.8089681376575535776" value="Umsatz +/-" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3966344537750455572">
-                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750422561" />
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750422561" resolveInfo="pm" />
               </node>
             </node>
             <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3989037348208840100">
@@ -6155,10 +6235,26 @@
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840108">
               <property name="width" nameId="sgb.8089681376575535775" value="100" />
-              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz Proforma" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="1277789488128813410">
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.3966344537750422830" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563069746688">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoabzug" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563069746690">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563069746228" />
+              </node>
+            </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5611258563069746691">
+              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoumsatz" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5611258563069746693">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.5611258563069746235" />
               </node>
             </node>
             <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3989037348208840110">
@@ -6218,9 +6314,20 @@
                 </node>
               </node>
             </node>
+            <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3955449600774291550">
+              <property name="width" nameId="sgb.8089681376575535775" value="120" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Vertragssortiment" />
+              <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
+              <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3955449600774291552">
+                <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133143734" />
+                <node role="path" roleId="sgb.8089681376575669706" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3955449600774291571">
+                  <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.7642954959705258791" />
+                </node>
+              </node>
+            </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3989037348208840126">
               <property name="width" nameId="sgb.8089681376575535775" value="100" />
-              <property name="label" nameId="sgb.8089681376575535776" value="Umsatz" />
+              <property name="label" nameId="sgb.8089681376575535776" value="Nettoumsatz" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="##,###,##0.00" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="8219958422839854414">
                 <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.8219958422839854268" />
@@ -6944,7 +7051,7 @@
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="3871999453604618006">
-        <property name="width" nameId="sgb.8089681376575535775" value="120" />
+        <property name="width" nameId="sgb.8089681376575535775" value="200" />
         <property name="label" nameId="sgb.8089681376575535776" value="E-Mail" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="3871999453604618008">
