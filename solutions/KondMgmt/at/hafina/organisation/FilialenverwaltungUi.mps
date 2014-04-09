@@ -357,6 +357,14 @@
                 <link role="property" roleId="tpee.1201385237847" targetNodeId="h02c.5388256980440388318" resolveInfo="toDate" />
               </node>
             </node>
+            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3918017161318881318">
+              <node role="operand" roleId="tpee.1197027771414" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="3918017161318881303">
+                <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="h02c.3243506821944818837" resolveInfo="FilialListeCriteria" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3918017161318881324">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="h02c.3243506821944818839" />
+              </node>
+            </node>
           </node>
         </node>
         <node role="imageString" roleId="sgb.3985184476073673634" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2485941801214306589">

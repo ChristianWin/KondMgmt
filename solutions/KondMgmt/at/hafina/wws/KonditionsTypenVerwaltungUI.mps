@@ -930,8 +930,8 @@
           <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
           <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669653">
             <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="2075539057415669654">
-              <link role="property" roleId="sgb.8089681376575669705" targetNodeId="8z9b.2075539057415667926" />
+            <node role="expression" roleId="sgb.5005516259701333695" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="4013438550446816114">
+              <link role="property" roleId="sgb.8089681376575669705" targetNodeId="8z9b.2075539057415667919" />
             </node>
           </node>
           <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669655">

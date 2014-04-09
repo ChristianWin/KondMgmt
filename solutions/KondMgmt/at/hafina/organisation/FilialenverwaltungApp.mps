@@ -39,12 +39,12 @@
     <node type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3955449600776371260">
       <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
       <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//lola:1521/LOLA" />
-      <property name="jmxuri" nameId="un0u.8603748575145006884" value=" service:jmx:rmi://localhost/jndi/rmi://localhost:1099/???" />
       <property name="maxPoolSize" nameId="un0u.3517052249650441955" value="1" />
       <property name="name" nameId="tpck.1169194664001" value="BasisConfigurationUntTest" />
       <property name="username" nameId="un0u.8537348545916385360" value="KMSW" />
       <property name="password" nameId="un0u.8537348545916385361" value="lola" />
       <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
+      <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     </node>
   </roots>
   <root id="3989037348208998718">

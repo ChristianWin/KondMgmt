@@ -7043,7 +7043,7 @@
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5378941860657653666">
-        <property name="width" nameId="sgb.8089681376575535775" value="140" />
+        <property name="width" nameId="sgb.8089681376575535775" value="135" />
         <property name="label" nameId="sgb.8089681376575535776" value="Ansprechpartner" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5378941860657653667">
@@ -7102,7 +7102,7 @@
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5378941860657653679">
-        <property name="width" nameId="sgb.8089681376575535775" value="150" />
+        <property name="width" nameId="sgb.8089681376575535775" value="110" />
         <property name="label" nameId="sgb.8089681376575535776" value="Leistungszeitraum" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5378941860657653680">
@@ -7118,7 +7118,7 @@
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5378941860657653683">
-        <property name="width" nameId="sgb.8089681376575535775" value="65" />
+        <property name="width" nameId="sgb.8089681376575535775" value="60" />
         <property name="label" nameId="sgb.8089681376575535776" value="Freigabe" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5378941860657653684">
@@ -7126,15 +7126,15 @@
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5378941860657653685">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="Übernahmedatum" />
+        <property name="width" nameId="sgb.8089681376575535775" value="80" />
+        <property name="label" nameId="sgb.8089681376575535776" value="Übernahme" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5378941860657653686">
           <link role="property" roleId="sgb.8089681376575669705" targetNodeId="1v76.2578114784133108536" resolveInfo="uebernahmeDatum" />
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5378941860657653687">
-        <property name="width" nameId="sgb.8089681376575535775" value="65" />
+        <property name="width" nameId="sgb.8089681376575535775" value="60" />
         <property name="label" nameId="sgb.8089681376575535776" value="Status" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="5386099412291744778">
@@ -7153,7 +7153,7 @@
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="6954739765071743039">
-        <property name="width" nameId="sgb.8089681376575535775" value="60" />
+        <property name="width" nameId="sgb.8089681376575535775" value="50" />
         <property name="label" nameId="sgb.8089681376575535776" value="Kopie?" />
         <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
         <node role="xPropPath" roleId="sgb.8089681376575671084" type="sgb.XPropPath" typeId="sgb.8089681376575669704" id="6954739765071743042">
