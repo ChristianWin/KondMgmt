@@ -543,7 +543,7 @@
     </node>
     <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="489969188104799381">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="489969188104799382">
-        <property name="text" nameId="un0u.6525155817177697682" value="Editieren der gewählten Zuordnung" />
+        <property name="text" nameId="un0u.6525155817177697682" value="Auswahl von Lieferanten in den entsprechenden Lieferantenrollen als Zuordnungskriterium" />
       </node>
     </node>
     <node role="commandInit" roleId="un0u.7192042020164579739" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="489969188104799383">
@@ -639,6 +639,11 @@
         </node>
       </node>
     </node>
+    <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912165">
+      <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912166">
+        <property name="text" nameId="un0u.6525155817177697682" value="Löscht die gewählte Zuordnung" />
+      </node>
+    </node>
   </root>
   <root id="489969188104799403">
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="489969188106082372">
@@ -686,7 +691,7 @@
     </node>
     <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="489969188104799409">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="489969188104799410">
-        <property name="text" nameId="un0u.6525155817177697682" value="Anzeige und Editieren der Zuordnungstabelle" />
+        <property name="text" nameId="un0u.6525155817177697682" value="Anzeige mit Möglichkeit zum Editieren der Zuordnungstabelle" />
       </node>
     </node>
     <node role="commandInit" roleId="un0u.7192042020164579739" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="489969188105300120">
@@ -830,6 +835,11 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="489969188104799447" />
       <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="489969188104799448" />
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823911901">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823911902">
+          <property name="text" nameId="un0u.6525155817177697682" value="ID" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799449">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -844,6 +854,11 @@
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="489969188104799455">
         <link role="status" roleId="un0u.6600213247848012755" targetNodeId="489969188104799429" resolveInfo="StatusZuordnung" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912121">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912122">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungsstatus: Ungültig, Aktiv, Inaktiv, Gelöscht" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799456">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -856,6 +871,11 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="489969188104799462" />
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912123">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912124">
+          <property name="text" nameId="un0u.6525155817177697682" value="1 = Artikelangabe gültig" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799463">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -869,6 +889,11 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799469">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="46c4.2578114784133105812" resolveInfo="Artikel" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912125">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912126">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungskriterium Artikel" />
+        </node>
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799470">
@@ -884,6 +909,11 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799476">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912127">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912128">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungskriterium Standardlieferant" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799477">
       <property name="doc" nameId="un0u.1234268821833508554" value="Konditionsschema - Zuordnung zu Lieferant Rechnung" />
@@ -897,6 +927,11 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799483">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="46c4.2578114784133106194" resolveInfo="Lieferantenrabattgruppe" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912129">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912131">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungskriterium Lieferantenrabattgruppe" />
+        </node>
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799484">
@@ -912,6 +947,11 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799490">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912132">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912133">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungskriterium Warenlieferant" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799491">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -925,6 +965,11 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799497">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912134">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912135">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungskriterium Lieferant Rechnung" />
+        </node>
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799498">
@@ -940,6 +985,11 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799504">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912136">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912138">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungskriterium Lieferant Bestellung" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799505">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -953,6 +1003,11 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799511">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912139">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912140">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungskriterium Lieferant Kreditor (aktuell nicht verwendet)" />
+        </node>
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799512">
@@ -968,6 +1023,11 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799518">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912141">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912142">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnungskriterium Hersteller (aktuell nicht verwendet)" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799519">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -982,6 +1042,11 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799525">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912143">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912144">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnung zu Lieferant Kondition (Forderungsgeber)" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799526">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -995,6 +1060,16 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="489969188104799532">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="46c4.2578114784133106194" resolveInfo="Lieferantenrabattgruppe" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912157">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912158">
+          <property name="text" nameId="un0u.6525155817177697682" value="Zuordnung zu Teilsortiment des Forderungsgebers" />
+        </node>
+      </node>
+    </node>
+    <node role="documentation2" roleId="un0u.5847590543402877731" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912159">
+      <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912160">
+        <property name="text" nameId="un0u.6525155817177697682" value="Lieferantenzuordnung: Wenn alle definierten Zuordnungskriterien bei einer Wareneingangsposition erfüllt sind, wird diese zugunsten des Forderungsgeber verbucht" />
       </node>
     </node>
   </root>
@@ -3140,6 +3215,11 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="489969188106082382" />
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953627">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823953628">
+          <property name="text" nameId="un0u.6525155817177697682" value="ID ohne Bedeutung" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188106082383">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -3156,8 +3236,18 @@
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="489969188104799428" resolveInfo="LieferantenZuordnung" />
         </node>
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953635">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823953636">
+          <property name="text" nameId="un0u.6525155817177697682" value="Ergebnisliste der Zuordnungen nach Suche" />
+        </node>
+      </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="489969188106082375" />
+    <node role="documentation2" roleId="un0u.5847590543402886019" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953624">
+      <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823953626">
+        <property name="text" nameId="un0u.6525155817177697682" value="Auswahlkriterium zur Anzeige der Lieferantenzuordnungen" />
+      </node>
+    </node>
   </root>
   <root id="489969188106525064">
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="489969188106525085">
@@ -3310,6 +3400,11 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912161">
+      <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912162">
+        <property name="text" nameId="un0u.6525155817177697682" value="Auswahl eines Artikels als Zuordnungskriterium" />
       </node>
     </node>
   </root>
@@ -3646,6 +3741,11 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912163">
+      <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912164">
+        <property name="text" nameId="un0u.6525155817177697682" value="Auswahl eines Teilsortiments als Zuordnungskriterium und eines Teilsortiments das zugeordnet wird" />
       </node>
     </node>
   </root>
