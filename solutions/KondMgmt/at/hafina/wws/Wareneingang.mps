@@ -4542,6 +4542,11 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3909142449680764059">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="46c4.2578114784133105812" resolveInfo="Artikel" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345561">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345562">
+          <property name="text" nameId="un0u.6525155817177697682" value="für Artikel" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344217">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -4555,6 +4560,11 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="9189473878729344223">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345563">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345564">
+          <property name="text" nameId="un0u.6525155817177697682" value="für Lieferant" />
+        </node>
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344224">
@@ -4570,6 +4580,11 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8104064611855118149">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="kpc2.~DateTime" resolveInfo="DateTime" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345565">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345566">
+          <property name="text" nameId="un0u.6525155817177697682" value="von Datum" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344231">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -4583,6 +4598,11 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8104064611855118150">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="kpc2.~DateTime" resolveInfo="DateTime" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345567">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345568">
+          <property name="text" nameId="un0u.6525155817177697682" value="bis Datum" />
+        </node>
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344238">
@@ -4598,6 +4618,11 @@
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="8104064611855118092">
         <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2578114784133153191" resolveInfo="BelegTyp" />
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345569">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345571">
+          <property name="text" nameId="un0u.6525155817177697682" value="Belegtyp" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729912063">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -4611,6 +4636,11 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="9189473878729912069">
         <link role="status" roleId="un0u.6600213247848012755" targetNodeId="9189473878729344258" resolveInfo="WeStatus" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345572">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345573">
+          <property name="text" nameId="un0u.6525155817177697682" value="Belegstatus" />
+        </node>
       </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="8104064611855122134">
@@ -4628,6 +4658,11 @@
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133153190" resolveInfo="WareneingangsBeleg" />
         </node>
       </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345574">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345575">
+          <property name="text" nameId="un0u.6525155817177697682" value="Ergebnisliste mit We-Belegen nach Suche" />
+        </node>
+      </node>
     </node>
     <node role="property" roleId="tpee.1201374247313" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="9189473878729344245">
       <property name="doc" nameId="un0u.1234268821833508554" value="_" />
@@ -4642,6 +4677,11 @@
       <node role="type" roleId="tpee.1201371521209" type="tp2q.ListType" typeId="tp2q.1151688443754" id="9189473878729344251">
         <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="8104064611855205638">
           <link role="classifier" roleId="tpee.1107535924139" targetNodeId="hqqe.489969188104799428" resolveInfo="LieferantenZuordnung" />
+        </node>
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345582">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345583">
+          <property name="text" nameId="un0u.6525155817177697682" value="Lieferantenzuordnungen welche bei der Suche berücksichtigt werden" />
         </node>
       </node>
     </node>
@@ -4729,6 +4769,11 @@
     </node>
     <node role="equalProperties" roleId="un0u.5225022991485184163" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="9189473878729344253">
       <link role="property" roleId="un0u.836579671456120411" targetNodeId="9189473878729344217" />
+    </node>
+    <node role="documentation2" roleId="un0u.5847590543402886019" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838824345554">
+      <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838824345560">
+        <property name="text" nameId="un0u.6525155817177697682" value="Auswahlkriterium für die Anzeige von We-Belegen" />
+      </node>
     </node>
   </root>
   <root id="9189473878729344254">
