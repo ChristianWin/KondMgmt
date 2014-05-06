@@ -8982,34 +8982,18 @@
                                           <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="2647181365808860020">
                                             <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="2647181365808860021">
                                               <node role="statement" roleId="tpee.1068581517665" type="tpee.IfStatement" typeId="tpee.1068580123159" id="2647181365808860022">
-                                                <node role="condition" roleId="tpee.1068580123160" type="tpee.OrExpression" typeId="tpee.1080223426719" id="2647181365808860023">
-                                                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="2647181365808860024">
-                                                    <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="2647181365808860025">
-                                                      <link role="element" roleId="un0u.1707329006119989962" targetNodeId="8z9b.2075539057415668069" resolveInfo="Nein" />
-                                                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="8z9b.2075539057415668067" resolveInfo="JaNeinStatus" />
+                                                <node role="condition" roleId="tpee.1068580123160" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="2647181365808860029">
+                                                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2647181365808860030">
+                                                    <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2647181365808860031">
+                                                      <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2647181365808860039" resolveInfo="itFord" />
                                                     </node>
-                                                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2647181365808860026">
-                                                      <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2647181365808860027">
-                                                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2647181365808860039" resolveInfo="itFord" />
-                                                      </node>
-                                                      <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2647181365808860028">
-                                                        <link role="property" roleId="tpee.1201385237847" targetNodeId="1v76.2578114784133108521" resolveInfo="isVerbucht" />
-                                                      </node>
+                                                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2647181365808860032">
+                                                      <link role="property" roleId="tpee.1201385237847" targetNodeId="1v76.2578114784133108528" resolveInfo="statusUebernahme" />
                                                     </node>
                                                   </node>
-                                                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.NotEqualsExpression" typeId="tpee.1073239437375" id="2647181365808860029">
-                                                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2647181365808860030">
-                                                      <node role="operand" roleId="tpee.1197027771414" type="tpee.ParameterReference" typeId="tpee.1068581242874" id="2647181365808860031">
-                                                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2647181365808860039" resolveInfo="itFord" />
-                                                      </node>
-                                                      <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2647181365808860032">
-                                                        <link role="property" roleId="tpee.1201385237847" targetNodeId="1v76.2578114784133108528" resolveInfo="statusUebernahme" />
-                                                      </node>
-                                                    </node>
-                                                    <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="2647181365808860033">
-                                                      <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133107069" resolveInfo="StatusUebernahme" />
-                                                      <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133107071" resolveInfo="Ok" />
-                                                    </node>
+                                                  <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="2647181365808860033">
+                                                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1v76.2578114784133107069" resolveInfo="StatusUebernahme" />
+                                                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1v76.2578114784133107071" resolveInfo="Ok" />
                                                   </node>
                                                 </node>
                                                 <node role="ifTrue" roleId="tpee.1068580123161" type="tpee.StatementList" typeId="tpee.1068580123136" id="2647181365808860034">
